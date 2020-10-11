@@ -1,2 +1,2 @@
-# bro-ml
-Machine learning components for bro science
+# bro-mo
+The mobile component to bro-science
