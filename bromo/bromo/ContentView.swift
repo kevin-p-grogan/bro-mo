@@ -10,18 +10,58 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
+    @State private var workoutIndex: Int = 0
+    @State private var weekIndex: Int = 0
     @ObservedObject var fetcher = WorkoutFetcher()
     
     var body: some View {
         VStack {
-            List(fetcher.workout) { exercise in
-                VStack (alignment: .leading) {
-                    Text(exercise.name)
-                    Text(exercise.setsAndReps)
-                        .font(.system(size: 11))
-                        .foregroundColor(Color.gray)
+            ConfigurationView(workoutIndex: $workoutIndex, weekIndex: $weekIndex)
+            GenerationButton(fetcher: fetcher, workoutIndex: $workoutIndex, weekIndex: $weekIndex)
+            ScheduleView(fetcher: fetcher)
+        }
+    }
+}
+
+struct ConfigurationView: View {
+    static let weeks = ["Recovery", "Hypertrophy", "Strength", "Test"]
+    static let workouts = ["Upper Push", "Upper Pull", "Lower Push", "Lower Pull"]
+    @Binding var workoutIndex: Int
+    @Binding var weekIndex: Int
+    
+    var body: some View {
+        NavigationView {
+            Form {
+                Section {
+                    Picker(selection: $weekIndex, label: Text("Week")) {
+                        ForEach(0 ..< ConfigurationView.weeks.count) {
+                            Text(ConfigurationView.weeks[$0])
+                        }
+                    }
+                }
+                Section {
+                    Picker(selection: $workoutIndex, label: Text("Workout Type")) {
+                        ForEach(0 ..< ConfigurationView.workouts.count) {
+                            Text(ConfigurationView.workouts[$0])
+                        }
+                    }
                 }
             }
+            .navigationBarTitle("Configure Workout")
+        }
+    }
+}
+
+struct GenerationButton: View {
+    var fetcher: WorkoutFetcher
+    @Binding var workoutIndex: Int
+    @Binding var weekIndex: Int
+    
+    var body: some View{
+        Button(action: {
+            self.fetcher.fetchWorkout(ConfigurationView.workouts[workoutIndex], ConfigurationView.weeks[weekIndex])
+        }) {
+            Text("Generate Workout")
         }
     }
 }
@@ -29,11 +69,12 @@ struct ContentView: View {
 public class WorkoutFetcher: ObservableObject {
     
     typealias ExerciseList = [Exercise]
-    @Published var workout = ExerciseList()
+    @Published var workoutSchedule = ExerciseList()
+    @Published var isLoading = false
     let url = URL(string: "https://bro-science-stage.herokuapp.com/generate")!
     
-    init(){
-        let workoutParameters = GeneratorParameters(workout: "Upper Pull", week: "Test")
+    func fetchWorkout(_ workout: String, _ week: String) {
+        let workoutParameters = GeneratorParameters(workout: workout, week: week)
         guard let request = createRequest(using: workoutParameters, at: url) else {return}
         setWorkout(using: request)
     }
@@ -51,13 +92,15 @@ public class WorkoutFetcher: ObservableObject {
     func setWorkout(using request: URLRequest) {
         // insert json data to the request
         let session = URLSession.shared
+        self.isLoading = true
         let task = session.dataTask(with: request) { (data, response, error) in
             if let d = data {
                 let decoder = JSONDecoder()
                 do {
                     let decodedLists = try decoder.decode(ExerciseList.self, from: d)
                     DispatchQueue.main.async {
-                        self.workout = decodedLists
+                        self.workoutSchedule = decodedLists
+                        self.isLoading = false
                     }
                 }
                 catch {
@@ -69,6 +112,26 @@ public class WorkoutFetcher: ObservableObject {
         }
         
         task.resume()
+    }
+}
+
+struct ScheduleView: View {
+    @ObservedObject var fetcher: WorkoutFetcher
+
+    var body: some View {
+        if fetcher.isLoading {
+            Text("Loading...")
+        }
+        else {
+            List(fetcher.workoutSchedule) { exercise in
+                VStack (alignment: .leading) {
+                    Text(exercise.name)
+                    Text(exercise.setsAndReps)
+                        .font(.system(size: 11))
+                        .foregroundColor(Color.gray)
+                }
+            }
+        }
     }
 }
 
