@@ -27,32 +27,35 @@ struct ContentView: View {
 }
 
 public class WorkoutFetcher: ObservableObject {
-
-    @Published var workout = [Exercise]()
+    
+    typealias ExerciseList = [Exercise]
+    @Published var workout = ExerciseList()
+    let url = URL(string: "https://bro-science-stage.herokuapp.com/generate")!
     
     init(){
-        load()
+        let workoutParameters = GeneratorParameters(workout: "Upper Pull", week: "Test")
+        guard let request = createRequest(using: workoutParameters, at: url) else {return}
+        setWorkout(using: request)
     }
     
-    func load() {
-        let parameters = GeneratorParameters(workout: "Upper Pull", week: "Test")
-        let url = URL(string: "https://bro-science-stage.herokuapp.com/generate")!
-        
+    func createRequest(using parameters:GeneratorParameters, at url: URL) -> URLRequest? {
         let encoder = JSONEncoder()
-        guard let uploadData = try? encoder.encode(parameters) else {return}
+        guard let uploadData = try? encoder.encode(parameters) else {return nil}
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = uploadData
-
-
+        return request
+    }
+    
+    func setWorkout(using request: URLRequest) {
         // insert json data to the request
         let session = URLSession.shared
         let task = session.dataTask(with: request) { (data, response, error) in
             if let d = data {
                 let decoder = JSONDecoder()
                 do {
-                    let decodedLists = try decoder.decode([Exercise].self, from: d)
+                    let decodedLists = try decoder.decode(ExerciseList.self, from: d)
                     DispatchQueue.main.async {
                         self.workout = decodedLists
                     }
@@ -60,16 +63,12 @@ public class WorkoutFetcher: ObservableObject {
                 catch {
                     print("Unexpected error: \(error).")
                 }
-                print(d)
-                // Handle HTTP request response
             } else {
                 print("Uh oh, spaghetti-os")
-                // Handle unexpected error
             }
         }
         
         task.resume()
-         
     }
 }
 
