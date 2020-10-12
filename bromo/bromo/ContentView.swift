@@ -18,7 +18,7 @@ struct ContentView: View {
         VStack {
             ConfigurationView(workoutIndex: $workoutIndex, weekIndex: $weekIndex)
             GenerationButton(fetcher: fetcher, workoutIndex: $workoutIndex, weekIndex: $weekIndex)
-            ScheduleView(fetcher: fetcher)
+            ScheduleView(fetcher: fetcher, workoutIndex: $workoutIndex, weekIndex: $weekIndex)
             Spacer()
         }
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
@@ -50,10 +50,9 @@ struct ConfigurationView: View {
                     }
                 }
             }
-            .navigationBarTitle("Configure Workout", displayMode: .inline)
+            .navigationBarTitle("Workout Generator", displayMode: .inline)
         }
-        .frame(height: 200)
-        .padding(10)
+        .frame(height: 270)
     }
 }
 
@@ -80,6 +79,7 @@ struct GenerationButton: View {
                 )
                 
         }
+        .padding(10)
     }
 }
 
@@ -96,6 +96,12 @@ public class WorkoutFetcher: ObservableObject {
         setWorkout(using: request)
     }
     
+    func fetchExercise(_ exerciseID: String, _ workout: String, _ week: String) {
+        let workoutParameters = GeneratorParameters(workout: workout, week: week)
+        guard let request = createRequest(using: workoutParameters, at: url) else {return}
+        setWorkout(using: request, onlyExerciseID: exerciseID)
+    }
+    
     func createRequest(using parameters:GeneratorParameters, at url: URL) -> URLRequest? {
         let encoder = JSONEncoder()
         guard let uploadData = try? encoder.encode(parameters) else {return nil}
@@ -106,7 +112,7 @@ public class WorkoutFetcher: ObservableObject {
         return request
     }
     
-    func setWorkout(using request: URLRequest) {
+    func setWorkout(using request: URLRequest, onlyExerciseID eid: String? = nil) {
         // insert json data to the request
         let session = URLSession.shared
         self.isLoading = true
@@ -116,7 +122,15 @@ public class WorkoutFetcher: ObservableObject {
                 do {
                     let decodedLists = try decoder.decode(ExerciseList.self, from: d)
                     DispatchQueue.main.async {
-                        self.workoutSchedule = decodedLists
+                        if eid != nil {
+                            let replacementExercise = decodedLists.first{$0.id==eid}
+                            if let re = replacementExercise {
+                                self.workoutSchedule = self.workoutSchedule.map{$0.id==eid ? re: $0}
+                            }
+                        }
+                        else {
+                            self.workoutSchedule = decodedLists
+                        }
                         self.isLoading = false
                     }
                 }
@@ -130,10 +144,13 @@ public class WorkoutFetcher: ObservableObject {
         
         task.resume()
     }
+    
 }
 
 struct ScheduleView: View {
     @ObservedObject var fetcher: WorkoutFetcher
+    @Binding var workoutIndex: Int
+    @Binding var weekIndex: Int
 
     var body: some View {
         if fetcher.isLoading {
@@ -147,7 +164,11 @@ struct ScheduleView: View {
                     Text(exercise.setsAndReps)
                         .font(.system(size: 11))
                 }
+                .onTapGesture {
+                    fetcher.fetchExercise(exercise.id, ConfigurationView.workouts[workoutIndex], ConfigurationView.weeks[weekIndex])
+                }
             }
+            
         }
     }
 }
