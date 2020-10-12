@@ -19,7 +19,10 @@ struct ContentView: View {
             ConfigurationView(workoutIndex: $workoutIndex, weekIndex: $weekIndex)
             GenerationButton(fetcher: fetcher, workoutIndex: $workoutIndex, weekIndex: $weekIndex)
             ScheduleView(fetcher: fetcher)
+            Spacer()
         }
+        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+
     }
 }
 
@@ -47,8 +50,10 @@ struct ConfigurationView: View {
                     }
                 }
             }
-            .navigationBarTitle("Configure Workout")
+            .navigationBarTitle("Configure Workout", displayMode: .inline)
         }
+        .frame(height: 200)
+        .padding(10)
     }
 }
 
@@ -61,7 +66,19 @@ struct GenerationButton: View {
         Button(action: {
             self.fetcher.fetchWorkout(ConfigurationView.workouts[workoutIndex], ConfigurationView.weeks[weekIndex])
         }) {
-            Text("Generate Workout")
+            Text("Generate")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding()
+                .background(Color.yellow)
+                .cornerRadius(40)
+                .foregroundColor(.black)
+                .padding(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 40)
+                        .stroke(Color.yellow, lineWidth: 5)
+                )
+                
         }
     }
 }
@@ -121,6 +138,7 @@ struct ScheduleView: View {
     var body: some View {
         if fetcher.isLoading {
             Text("Loading...")
+                .padding(10)
         }
         else {
             List(fetcher.workoutSchedule) { exercise in
@@ -128,7 +146,6 @@ struct ScheduleView: View {
                     Text(exercise.name)
                     Text(exercise.setsAndReps)
                         .font(.system(size: 11))
-                        .foregroundColor(Color.gray)
                 }
             }
         }
