@@ -88,7 +88,7 @@ public class WorkoutFetcher: ObservableObject {
     typealias ExerciseList = [Exercise]
     @Published var workoutSchedule = ExerciseList()
     @Published var isLoading = false
-    let url = URL(string: "https://bro-science-stage.herokuapp.com/generate")!
+    let url = URL(string: "https://bro-science-prod.herokuapp.com/generate")!
     
     func fetchWorkout(_ workout: String, _ week: String) {
         let workoutParameters = GeneratorParameters(workout: workout, week: week)
