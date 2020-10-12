@@ -10,63 +10,87 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    @ObservedObject var fetcher = MovieFetcher()
+    @ObservedObject var fetcher = WorkoutFetcher()
     
     var body: some View {
         VStack {
-            List(fetcher.movies) { movie in
+            List(fetcher.workout) { exercise in
                 VStack (alignment: .leading) {
-                    Text(movie.name)
-                    Text(movie.released)
+                    Text(exercise.name)
+                    Text(exercise.setsAndReps)
                         .font(.system(size: 11))
                         .foregroundColor(Color.gray)
                 }
             }
-            Text("asdf")
         }
     }
 }
 
-public class MovieFetcher: ObservableObject {
+public class WorkoutFetcher: ObservableObject {
 
-    @Published var movies = [Movie]()
+    @Published var workout = [Exercise]()
     
     init(){
         load()
     }
     
     func load() {
-        let url = URL(string: "https://gist.githubusercontent.com/rbreve/60eb5f6fe49d5f019d0c39d71cb8388d/raw/f6bc27e3e637257e2f75c278520709dd20b1e089/movies.json")!
-        URLSession.shared.dataTask(with: url) {(data,response,error) in
-            do {
-                if let d = data {
-                    let decodedLists = try JSONDecoder().decode([Movie].self, from: d)
+        let parameters = GeneratorParameters(workout: "Upper Pull", week: "Test")
+        let url = URL(string: "https://bro-science-stage.herokuapp.com/generate")!
+        
+        let encoder = JSONEncoder()
+        guard let uploadData = try? encoder.encode(parameters) else {return}
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = uploadData
+
+
+        // insert json data to the request
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { (data, response, error) in
+            if let d = data {
+                let decoder = JSONDecoder()
+                do {
+                    let decodedLists = try decoder.decode([Exercise].self, from: d)
                     DispatchQueue.main.async {
-                        self.movies = decodedLists
+                        self.workout = decodedLists
                     }
-                }else {
-                    print("No Data")
                 }
-            } catch {
-                print ("Error")
+                catch {
+                    print("Unexpected error: \(error).")
+                }
+                print(d)
+                // Handle HTTP request response
+            } else {
+                print("Uh oh, spaghetti-os")
+                // Handle unexpected error
             }
-            
-        }.resume()
+        }
+        
+        task.resume()
          
     }
 }
 
-struct Movie: Codable, Identifiable {
-    public var id: Int
+struct Exercise: Codable, Identifiable {
     public var name: String
-    public var released: String
+    public var setsAndReps: String
+    public var id: String
     
     enum CodingKeys: String, CodingKey {
-           case id = "id"
-           case name = "title"
-           case released = "year"
+           case name = "Exercise"
+           case setsAndReps = "Sets and Reps"
+           case id = "Type"
         }
 }
+
+
+struct GeneratorParameters: Codable {
+    let workout: String
+    let week: String
+}
+
 
 struct WorkoutGenerator_Previews: PreviewProvider {
     static var previews: some View {
