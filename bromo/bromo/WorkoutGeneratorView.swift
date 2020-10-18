@@ -21,8 +21,6 @@ struct WorkoutGeneratorView: View {
             ScheduleView(fetcher: fetcher, workoutIndex: $workoutIndex, weekIndex: $weekIndex)
             Spacer()
         }
-        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
-
     }
 }
 

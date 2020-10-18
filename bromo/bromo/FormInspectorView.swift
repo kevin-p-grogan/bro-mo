@@ -6,15 +6,21 @@
 //
 
 import SwiftUI
-import AVKit
 
 struct FormInspectorView: View {
     var body: some View {
-        Text("asdf")
-        .preferredColorScheme(.dark)
-
+        Text("Not Implemented")
     }
 }
+
+//struct FormInspectorView: UIViewControllerRepresentable {
+//    func makeUIViewController(context: Context) -> ViewController {
+//        return ViewController()
+//    }
+//
+//    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
+//    }
+//}
 
 struct FormInspectorView_Previews: PreviewProvider {
     static var previews: some View {
