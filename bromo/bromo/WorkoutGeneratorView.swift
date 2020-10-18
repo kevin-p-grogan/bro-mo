@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct WorkoutGeneratorView: View {
     @State private var workoutIndex: Int = 0
     @State private var weekIndex: Int = 0
     @ObservedObject var fetcher = WorkoutFetcher()
@@ -194,6 +194,6 @@ struct GeneratorParameters: Codable {
 
 struct WorkoutGenerator_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        WorkoutGeneratorView()
     }
 }
