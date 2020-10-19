@@ -32,6 +32,7 @@
 		AAAA0080253CCA42001E4EF4 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA005E253CCA42001E4EF4 /* PoseNet.swift */; };
 		AAAA0081253CCA42001E4EF4 /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA005F253CCA42001E4EF4 /* PoseNetInput.swift */; };
 		AAAA0082253CCA42001E4EF4 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0060253CCA42001E4EF4 /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		AAAA0089253D2866001E4EF4 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		AAAA005E253CCA42001E4EF4 /* PoseNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
 		AAAA005F253CCA42001E4EF4 /* PoseNetInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
 		AAAA0060253CCA42001E4EF4 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
+		AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				AA59C9432533856B0035DC87 /* Preview Content */,
 				AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */,
 				AAAA0026253CADE6001E4EF4 /* MainView.swift */,
+				AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */,
 			);
 			path = bromo;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				AAAA0024253CABEB001E4EF4 /* FormInspectorView.swift in Sources */,
 				AAAA0077253CCA42001E4EF4 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
 				AAAA0027253CADE6001E4EF4 /* MainView.swift in Sources */,
+				AAAA0089253D2866001E4EF4 /* ConfigurationView.swift in Sources */,
 				AAAA007F253CCA42001E4EF4 /* PoseNetOutput.swift in Sources */,
 				AAAA0080253CCA42001E4EF4 /* PoseNet.swift in Sources */,
 				AAAA007B253CCA42001E4EF4 /* PoseBuilder+Single.swift in Sources */,

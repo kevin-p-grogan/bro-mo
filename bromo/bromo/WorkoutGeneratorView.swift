@@ -10,58 +10,25 @@ import SwiftUI
 import Combine
 
 struct WorkoutGeneratorView: View {
-    @State private var workoutIndex: Int = 0
-    @State private var weekIndex: Int = 0
+    @ObservedObject var config: Configuration
     @ObservedObject var fetcher = WorkoutFetcher()
     
     var body: some View {
         VStack {
-            ConfigurationView(workoutIndex: $workoutIndex, weekIndex: $weekIndex)
-            GenerationButton(fetcher: fetcher, workoutIndex: $workoutIndex, weekIndex: $weekIndex)
-            ScheduleView(fetcher: fetcher, workoutIndex: $workoutIndex, weekIndex: $weekIndex)
+            GenerationButton(fetcher: fetcher, config: config)
+            ScheduleView(fetcher: fetcher, config: config)
             Spacer()
         }
     }
 }
 
-struct ConfigurationView: View {
-    static let weeks = ["Recovery", "Hypertrophy", "Strength", "Test"]
-    static let workouts = ["Upper Push", "Upper Pull", "Lower Push", "Lower Pull"]
-    @Binding var workoutIndex: Int
-    @Binding var weekIndex: Int
-    
-    var body: some View {
-        NavigationView {
-            Form {
-                Section {
-                    Picker(selection: $weekIndex, label: Text("Week")) {
-                        ForEach(0 ..< ConfigurationView.weeks.count) {
-                            Text(ConfigurationView.weeks[$0])
-                        }
-                    }
-                }
-                Section {
-                    Picker(selection: $workoutIndex, label: Text("Workout Type")) {
-                        ForEach(0 ..< ConfigurationView.workouts.count) {
-                            Text(ConfigurationView.workouts[$0])
-                        }
-                    }
-                }
-            }
-            .navigationBarTitle("Workout Generator", displayMode: .inline)
-        }
-        .frame(height: 270)
-    }
-}
-
 struct GenerationButton: View {
     var fetcher: WorkoutFetcher
-    @Binding var workoutIndex: Int
-    @Binding var weekIndex: Int
+    var config: Configuration
     
     var body: some View{
         Button(action: {
-            self.fetcher.fetchWorkout(ConfigurationView.workouts[workoutIndex], ConfigurationView.weeks[weekIndex])
+            self.fetcher.fetchWorkout(config.getWorkoutType(), config.week)
         }) {
             Text("Generate")
                 .font(.title)
@@ -147,8 +114,7 @@ public class WorkoutFetcher: ObservableObject {
 
 struct ScheduleView: View {
     @ObservedObject var fetcher: WorkoutFetcher
-    @Binding var workoutIndex: Int
-    @Binding var weekIndex: Int
+    @ObservedObject var config: Configuration
 
     var body: some View {
         if fetcher.isLoading {
@@ -163,7 +129,7 @@ struct ScheduleView: View {
                         .font(.system(size: 11))
                 }
                 .onTapGesture {
-                    fetcher.fetchExercise(exercise.id, ConfigurationView.workouts[workoutIndex], ConfigurationView.weeks[weekIndex])
+                    fetcher.fetchExercise(exercise.id, config.getWorkoutType(), config.week)
                 }
             }
             
@@ -192,6 +158,6 @@ struct GeneratorParameters: Codable {
 
 struct WorkoutGenerator_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutGeneratorView()
+        WorkoutGeneratorView(config: Configuration())
     }
 }
