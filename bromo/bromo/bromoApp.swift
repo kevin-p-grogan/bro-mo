@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct bromoApp: App {
+    let context = BroDataStore.context
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView().environment(\.managedObjectContext, context)
         }
     }
 }

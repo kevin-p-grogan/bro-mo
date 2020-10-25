@@ -12,6 +12,7 @@ import Combine
 struct WorkoutGeneratorView: View {
     @ObservedObject var config: Configuration
     @ObservedObject var fetcher = WorkoutFetcher()
+    @Environment(\.managedObjectContext) var context
     
     var body: some View {
         VStack {
@@ -115,6 +116,9 @@ public class WorkoutFetcher: ObservableObject {
 struct ScheduleView: View {
     @ObservedObject var fetcher: WorkoutFetcher
     @ObservedObject var config: Configuration
+    @State var editExercise = false
+    @State var currentExercise: Exercise? = nil
+
 
     var body: some View {
         if fetcher.isLoading {
@@ -129,11 +133,59 @@ struct ScheduleView: View {
                         .font(.system(size: 11))
                 }
                 .onTapGesture {
-                    fetcher.fetchExercise(exercise.id, config.getWorkoutType(), config.week)
+                    self.editExercise = true
+                    self.currentExercise = exercise
                 }
+            }.sheet(isPresented: $editExercise){
+                ExerciseSheet(fetcher: fetcher, config: config, exercise: $currentExercise).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
             }
-            
         }
+    }
+}
+
+struct ExerciseSheet: View {
+    @ObservedObject var fetcher: WorkoutFetcher
+    @ObservedObject var config: Configuration
+    @Binding var exercise: Exercise?
+    
+    var body: some View {
+        if let exercise = self.exercise {
+            VStack{
+                Text(exercise.name)
+                Text(exercise.setsAndReps)
+                ResampleButton(fetcher: fetcher, config: config, exerciseId: exercise.id)
+            }
+        }
+        else {
+            Text("Uh, oh Spaghetti-Os")
+        }
+    }
+}
+
+struct ResampleButton: View {
+    var fetcher: WorkoutFetcher
+    var config: Configuration
+    var exerciseId: String
+    
+    var body: some View{
+        Button(action: {
+            self.fetcher.fetchExercise(exerciseId, config.getWorkoutType(), config.week)
+        }) {
+            Text("Resample")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding()
+                .background(Color.yellow)
+                .cornerRadius(40)
+                .foregroundColor(.black)
+                .padding(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 40)
+                        .stroke(Color.yellow, lineWidth: 5)
+                )
+                
+        }
+        .padding(10)
     }
 }
 
@@ -147,6 +199,18 @@ struct Exercise: Codable, Identifiable {
            case setsAndReps = "Sets and Reps"
            case id = "Type"
         }
+    
+    public var setsAndRepsValues: (sets: Int, reps: Int) {
+        set{
+            self.setsAndReps = "\(newValue.sets)x\(newValue.reps)"
+        }
+        get {
+            let split = self.setsAndReps.components(separatedBy: "x")
+            let sets = Int(split.first ?? "0") ?? 0
+            let reps = Int(split.last ?? "0") ?? 0
+            return (sets: sets, reps: reps)
+        }
+    }
 }
 
 

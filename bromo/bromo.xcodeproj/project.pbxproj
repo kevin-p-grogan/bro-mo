@@ -11,6 +11,8 @@
 		AA59C9402533856A0035DC87 /* WorkoutGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */; };
 		AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9412533856B0035DC87 /* Assets.xcassets */; };
 		AA59C9452533856B0035DC87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9442533856B0035DC87 /* Preview Assets.xcassets */; };
+		AA8625CC2546118300D2B60E /* BroDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8625CB2546118300D2B60E /* BroDataStore.swift */; };
+		AA8625D2254611D600D2B60E /* BroDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */; };
 		AAAA0024253CABEB001E4EF4 /* FormInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */; };
 		AAAA0027253CADE6001E4EF4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0026253CADE6001E4EF4 /* MainView.swift */; };
 		AAAA006B253CCA42001E4EF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0042253CCA42001E4EF4 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 		AA59C9412533856B0035DC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA59C9442533856B0035DC87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA59C9462533856B0035DC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8625CB2546118300D2B60E /* BroDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroDataStore.swift; sourceTree = "<group>"; };
+		AA8625D1254611D600D2B60E /* BroDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BroDataModel.xcdatamodel; sourceTree = "<group>"; };
 		AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInspectorView.swift; sourceTree = "<group>"; };
 		AAAA0026253CADE6001E4EF4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AAAA0042253CCA42001E4EF4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		AA59C93C2533856A0035DC87 /* bromo */ = {
 			isa = PBXGroup;
 			children = (
+				AA8625CA2546116500D2B60E /* Data */,
 				AA59C93D2533856A0035DC87 /* bromoApp.swift */,
 				AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */,
 				AA59C9412533856B0035DC87 /* Assets.xcassets */,
@@ -115,6 +120,15 @@
 				AA59C9442533856B0035DC87 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA8625CA2546116500D2B60E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA8625CB2546118300D2B60E /* BroDataStore.swift */,
+				AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		AAAA0032253CCA42001E4EF4 /* DetectingHumanBodyPosesInAnImage */ = {
@@ -260,6 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8625CC2546118300D2B60E /* BroDataStore.swift in Sources */,
+				AA8625D2254611D600D2B60E /* BroDataModel.xcdatamodeld in Sources */,
 				AAAA006B253CCA42001E4EF4 /* ViewController.swift in Sources */,
 				AAAA0075253CCA42001E4EF4 /* CGPoint+Extension.swift in Sources */,
 				AAAA0082253CCA42001E4EF4 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
@@ -472,6 +488,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA8625D1254611D600D2B60E /* BroDataModel.xcdatamodel */,
+			);
+			currentVersion = AA8625D1254611D600D2B60E /* BroDataModel.xcdatamodel */;
+			path = BroDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AA59C9322533856A0035DC87 /* Project object */;
 }
