@@ -137,7 +137,7 @@ struct ScheduleView: View {
                     self.currentExercise = exercise
                 }
             }.sheet(isPresented: $editExercise){
-                ExerciseSheet(fetcher: fetcher, config: config, exercise: $currentExercise).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+                ExerciseSheet(fetcher: fetcher, config: config, currentExercise: $currentExercise).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
             }
         }
     }
@@ -146,14 +146,53 @@ struct ScheduleView: View {
 struct ExerciseSheet: View {
     @ObservedObject var fetcher: WorkoutFetcher
     @ObservedObject var config: Configuration
-    @Binding var exercise: Exercise?
+    @Binding var currentExercise: Exercise?
+    @State var sets: Int = 0
+    @State var reps: Int = 0
+    @State var weight: Int = 0
     
     var body: some View {
-        if let exercise = self.exercise {
+        if let exercise = currentExercise {
             VStack{
-                Text(exercise.name)
-                Text(exercise.setsAndReps)
                 ResampleButton(fetcher: fetcher, config: config, exerciseId: exercise.id)
+                Text(exercise.name).font(.title)
+//                Text(exercise.setsAndReps)
+                HStack{
+                    VStack{
+                        Text("Sets")
+                        Picker("Sets", selection: $sets) {
+                            ForEach(0 ..< 100) {
+                                Text("\($0)")
+                            }
+                        }.pickerStyle(WheelPickerStyle())
+                        .offset(y:-100)
+                    }
+                    .frame(width: 100)
+                    .clipped()
+                    VStack{
+                        Text("Reps")
+                        Picker("Reps", selection: $reps) {
+                            ForEach(0 ..< 100) {
+                                Text("\($0)")
+                            }
+                        }.pickerStyle(WheelPickerStyle())
+                        .offset(y:-100)
+                    }
+                    .frame(width: 100)
+                    .clipped()
+                    VStack{
+                        Text("Weight")
+                        Picker("Weight", selection: $weight) {
+                            ForEach(0 ..< 1000) {
+                                Text("\($0) lbs")
+                            }
+                        }.pickerStyle(WheelPickerStyle())
+                        .offset(y:-100)
+                    }
+                    .frame(width: 100)
+                    .clipped()
+                }
+                .offset(y: 50)
             }
         }
         else {
@@ -199,18 +238,34 @@ struct Exercise: Codable, Identifiable {
            case setsAndReps = "Sets and Reps"
            case id = "Type"
         }
-    
-    public var setsAndRepsValues: (sets: Int, reps: Int) {
+     
+    public var sets: Int {
         set{
-            self.setsAndReps = "\(newValue.sets)x\(newValue.reps)"
+            let reps = convertSetsAndReps().reps
+            self.setsAndReps = "\(newValue)x\(reps)"
         }
         get {
-            let split = self.setsAndReps.components(separatedBy: "x")
-            let sets = Int(split.first ?? "0") ?? 0
-            let reps = Int(split.last ?? "0") ?? 0
-            return (sets: sets, reps: reps)
+            return convertSetsAndReps().sets
         }
     }
+    
+    public var reps: Int {
+        set{
+            let sets = convertSetsAndReps().sets
+            self.setsAndReps = "\(sets)x\(newValue)"
+        }
+        get {
+            return convertSetsAndReps().reps
+        }
+    }
+    
+    private func convertSetsAndReps() -> (sets: Int, reps: Int) {
+        let split = self.setsAndReps.components(separatedBy: "x")
+        let sets = Int(split.first ?? "0") ?? 0
+        let reps = Int(split.last ?? "0") ?? 0
+        return (sets: sets, reps: reps)
+    }
+        
 }
 
 
@@ -222,6 +277,6 @@ struct GeneratorParameters: Codable {
 
 struct WorkoutGenerator_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutGeneratorView(config: Configuration())
+       Text("Hello!")
     }
 }
