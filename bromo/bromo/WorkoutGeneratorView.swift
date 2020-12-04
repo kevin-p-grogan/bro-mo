@@ -17,7 +17,7 @@ struct WorkoutGeneratorView: View {
     var body: some View {
         VStack {
             GenerationButton(fetcher: fetcher, config: config)
-            ScheduleView(fetcher: fetcher, config: config)
+            ScheduleView(fetcher: fetcher, config: config).environment(\.managedObjectContext, context)
             Spacer()
         }
     }
@@ -116,6 +116,7 @@ public class WorkoutFetcher: ObservableObject {
 struct ScheduleView: View {
     @ObservedObject var fetcher: WorkoutFetcher
     @ObservedObject var config: Configuration
+    @Environment(\.managedObjectContext) var context
     @State var editExercise = false
     @State var currentExercise: Exercise? = nil
 
@@ -137,7 +138,9 @@ struct ScheduleView: View {
                     self.currentExercise = exercise
                 }
             }.sheet(isPresented: $editExercise){
-                ExerciseSheet(fetcher: fetcher, config: config, currentExercise: $currentExercise).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+                ExerciseSheet(fetcher: fetcher, config: config, currentExercise: $currentExercise)
+                    .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+                    .environment(\.managedObjectContext, context)
             }
         }
     }
@@ -146,6 +149,7 @@ struct ScheduleView: View {
 struct ExerciseSheet: View {
     @ObservedObject var fetcher: WorkoutFetcher
     @ObservedObject var config: Configuration
+    @Environment(\.managedObjectContext) var context
     @Binding var currentExercise: Exercise?
     @State var sets: Int = 0
     @State var reps: Int = 0
@@ -156,7 +160,6 @@ struct ExerciseSheet: View {
             VStack{
                 ResampleButton(fetcher: fetcher, config: config, exerciseId: exercise.id)
                 Text(exercise.name).font(.title)
-//                Text(exercise.setsAndReps)
                 HStack{
                     VStack{
                         Text("Sets")
@@ -183,8 +186,8 @@ struct ExerciseSheet: View {
                     VStack{
                         Text("Weight")
                         Picker("Weight", selection: $weight) {
-                            ForEach(0 ..< 1000) {
-                                Text("\($0) lbs")
+                            ForEach(0 ..< 200){
+                                Text("\($0 * 5) lbs")
                             }
                         }.pickerStyle(WheelPickerStyle())
                         .offset(y:-100)
@@ -193,6 +196,8 @@ struct ExerciseSheet: View {
                     .clipped()
                 }
                 .offset(y: 50)
+                SaveExerciseButton(sets: sets, reps: reps, weight: weight, exerciseId: exercise.id)
+                    .environment(\.managedObjectContext, context)
             }
         }
         else {
@@ -205,6 +210,7 @@ struct ResampleButton: View {
     var fetcher: WorkoutFetcher
     var config: Configuration
     var exerciseId: String
+    @Environment(\.managedObjectContext) var context
     
     var body: some View{
         Button(action: {
@@ -223,6 +229,39 @@ struct ResampleButton: View {
                         .stroke(Color.yellow, lineWidth: 5)
                 )
                 
+        }
+        .padding(10)
+    }
+}
+
+struct SaveExerciseButton: View {
+    var sets: Int
+    var reps: Int
+    var weight: Int
+    var exerciseId: String
+    @State private var showingAlert = false
+    
+    var body: some View{
+        Button(action: {
+            self.showingAlert = true
+        }) {
+            Text("Save Exercsise")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding()
+                .background(Color.yellow)
+                .cornerRadius(40)
+                .foregroundColor(.black)
+                .padding(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 40)
+                        .stroke(Color.yellow, lineWidth: 5)
+                )
+                
+        }
+        //TODO:  Implement saving to Core Data
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Error"), message: Text("Not Implemented"), dismissButton: .default(Text("OK")))
         }
         .padding(10)
     }
@@ -277,6 +316,6 @@ struct GeneratorParameters: Codable {
 
 struct WorkoutGenerator_Previews: PreviewProvider {
     static var previews: some View {
-       Text("Hello!")
+        SaveExerciseButton(sets: 10, reps: 10, weight: 100, exerciseId: "asdf")
     }
 }
