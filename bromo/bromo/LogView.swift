@@ -15,8 +15,19 @@ struct LogView: View {
     var body: some View {
         VStack{
             Text("Exercise Log").font(.title)
-            List (logItems) { li in
-                LogItemView(logItem: li)
+            List {
+                ForEach(logItems) { li in
+                    LogItemView(logItem: li)
+                }.onDelete { indexSet in
+                    for index in indexSet {
+                        context.delete(logItems[index])
+                    }
+                    do {
+                        try context.save()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
             }
         }
     }

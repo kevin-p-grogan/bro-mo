@@ -108,19 +108,7 @@ struct SaveExerciseButton: View {
     
     var body: some View{
         Button(action: {
-            let newLogItem = LogItem(context: context)
-            newLogItem.sets = Int16(sets)
-            newLogItem.reps = Int16(reps)
-            newLogItem.weight = Int16(weight)
-            newLogItem.exercise = name
-            newLogItem.date = Date()
-            do {
-                try context.save()
-            }
-            catch {
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+            createNewLogItem(context, sets, reps, weight, name)
             showingAlert = true
         }) {
             Text("Save Exercsise")
