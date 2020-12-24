@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA67925946DAA00A038BF /* LogView.swift */; };
-		AA1AA67D259509A800A038BF /* ExerciseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA67C259509A800A038BF /* ExerciseSheetView.swift */; };
-		AA1AA6802595107D00A038BF /* WorkoutFetcher+Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA67F2595107D00A038BF /* WorkoutFetcher+Exercise.swift */; };
+		AA1AA6A42595357600A038BF /* ExerciseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */; };
+		AA1AA6A52595357600A038BF /* WorkoutFetcher+Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */; };
 		AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93D2533856A0035DC87 /* bromoApp.swift */; };
 		AA59C9402533856A0035DC87 /* WorkoutGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */; };
 		AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9412533856B0035DC87 /* Assets.xcassets */; };
@@ -42,8 +42,8 @@
 
 /* Begin PBXFileReference section */
 		AA1AA67925946DAA00A038BF /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
-		AA1AA67C259509A800A038BF /* ExerciseSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSheetView.swift; sourceTree = "<group>"; };
-		AA1AA67F2595107D00A038BF /* WorkoutFetcher+Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutFetcher+Exercise.swift"; sourceTree = "<group>"; };
+		AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseSheetView.swift; sourceTree = "<group>"; };
+		AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WorkoutFetcher+Exercise.swift"; sourceTree = "<group>"; };
 		AA59C93A2533856A0035DC87 /* bromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA59C93D2533856A0035DC87 /* bromoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bromoApp.swift; sourceTree = "<group>"; };
 		AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutGeneratorView.swift; sourceTree = "<group>"; };
@@ -107,10 +107,10 @@
 		AA59C93C2533856A0035DC87 /* bromo */ = {
 			isa = PBXGroup;
 			children = (
+				AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */,
+				AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */,
 				AA8625CA2546116500D2B60E /* Data */,
 				AA59C93D2533856A0035DC87 /* bromoApp.swift */,
-				AA1AA67C259509A800A038BF /* ExerciseSheetView.swift */,
-				AA1AA67F2595107D00A038BF /* WorkoutFetcher+Exercise.swift */,
 				AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */,
 				AA59C9412533856B0035DC87 /* Assets.xcassets */,
 				AA59C9462533856B0035DC87 /* Info.plist */,
@@ -289,7 +289,7 @@
 				AAAA0075253CCA42001E4EF4 /* CGPoint+Extension.swift in Sources */,
 				AAAA0082253CCA42001E4EF4 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
 				AAAA0024253CABEB001E4EF4 /* FormInspectorView.swift in Sources */,
-				AA1AA67D259509A800A038BF /* ExerciseSheetView.swift in Sources */,
+				AA1AA6A42595357600A038BF /* ExerciseSheetView.swift in Sources */,
 				AAAA0077253CCA42001E4EF4 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
 				AAAA0027253CADE6001E4EF4 /* MainView.swift in Sources */,
 				AAAA0089253D2866001E4EF4 /* ConfigurationView.swift in Sources */,
@@ -303,7 +303,7 @@
 				AAAA0078253CCA42001E4EF4 /* VideoCapture.swift in Sources */,
 				AAAA006D253CCA42001E4EF4 /* ConfigurationViewController.swift in Sources */,
 				AAAA007A253CCA42001E4EF4 /* PoseBuilder+Multiple.swift in Sources */,
-				AA1AA6802595107D00A038BF /* WorkoutFetcher+Exercise.swift in Sources */,
+				AA1AA6A52595357600A038BF /* WorkoutFetcher+Exercise.swift in Sources */,
 				AAAA007D253CCA42001E4EF4 /* PoseBuilder.swift in Sources */,
 				AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */,
 				AAAA007E253CCA42001E4EF4 /* PoseBuilderConfiguration.swift in Sources */,

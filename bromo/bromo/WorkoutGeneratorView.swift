@@ -65,9 +65,7 @@ struct ScheduleView: View {
         else {
             List(fetcher.workoutSchedule) { exercise in
                 VStack (alignment: .leading) {
-                    Text(exercise.name)
-                    Text(exercise.setsAndReps)
-                        .font(.system(size: 11))
+                    ExerciseItemView(exerciseItem: ExerciseItem(exercise: exercise))
                 }
                 .onTapGesture {
                     self.editExercise = true

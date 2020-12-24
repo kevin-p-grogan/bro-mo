@@ -108,7 +108,8 @@ struct SaveExerciseButton: View {
     
     var body: some View{
         Button(action: {
-            createNewLogItem(context, sets, reps, weight, name)
+            _ = createLogItem(context, sets, reps, weight, name)
+            saveContext(context)
             showingAlert = true
         }) {
             Text("Save Exercsise")

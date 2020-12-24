@@ -56,35 +56,26 @@ struct PersistenceController {
         })
     }
     
-    public static func saveContext () {
-        let context = shared.container.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
-    }
-    
     public static var sharedContext: NSManagedObjectContext =  shared.container.viewContext
 }
 
 
-func createNewLogItem(_ context: NSManagedObjectContext, _ sets: Int, _ reps: Int, _ weight: Int, _ name: String) {
-    let newLogItem = LogItem(context: context)
-    newLogItem.sets = Int16(sets)
-    newLogItem.reps = Int16(reps)
-    newLogItem.weight = Int16(weight)
-    newLogItem.exercise = name
-    newLogItem.date = Date()
-    do {
-        try context.save()
-    }
-    catch {
-        let nsError = error as NSError
-        fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-    }
-    
+func createLogItem(_ context: NSManagedObjectContext, _ sets: Int, _ reps: Int, _ weight: Int, _ name: String) -> LogItem {
+    let logItem = LogItem(context: context)
+    logItem.sets = Int16(sets)
+    logItem.reps = Int16(reps)
+    logItem.weight = Int16(weight)
+    logItem.exercise = name
+    logItem.date = Date()
+    return logItem
+}
+
+func saveContext(_ context: NSManagedObjectContext) {
+        do {
+            try context.save()
+        }
+        catch {
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
 }
