@@ -196,7 +196,7 @@ struct ExerciseSheet: View {
                     .clipped()
                 }
                 .offset(y: 50)
-                SaveExerciseButton(sets: sets, reps: reps, weight: weight, exerciseId: exercise.id)
+                SaveExerciseButton(sets: sets, reps: reps, weight: weight, name: exercise.name)
                     .environment(\.managedObjectContext, context)
             }
         }
@@ -238,12 +238,26 @@ struct SaveExerciseButton: View {
     var sets: Int
     var reps: Int
     var weight: Int
-    var exerciseId: String
+    var name: String
     @State private var showingAlert = false
+    @Environment(\.managedObjectContext) var context
     
     var body: some View{
         Button(action: {
-            self.showingAlert = true
+            let newLogItem = LogItem(context: context)
+            newLogItem.sets = Int16(sets)
+            newLogItem.reps = Int16(reps)
+            newLogItem.weight = Int16(weight)
+            newLogItem.exercise = name
+            newLogItem.date = Date()
+            do {
+                try context.save()
+            }
+            catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+            showingAlert = true
         }) {
             Text("Save Exercsise")
                 .font(.title)
@@ -258,12 +272,9 @@ struct SaveExerciseButton: View {
                         .stroke(Color.yellow, lineWidth: 5)
                 )
                 
+        }.alert(isPresented: $showingAlert) {
+            Alert(title: Text("Exercise Saved!"), dismissButton: .default(Text("OK")))
         }
-        //TODO:  Implement saving to Core Data
-        .alert(isPresented: $showingAlert) {
-            Alert(title: Text("Error"), message: Text("Not Implemented"), dismissButton: .default(Text("OK")))
-        }
-        .padding(10)
     }
 }
 
@@ -316,6 +327,6 @@ struct GeneratorParameters: Codable {
 
 struct WorkoutGenerator_Previews: PreviewProvider {
     static var previews: some View {
-        SaveExerciseButton(sets: 10, reps: 10, weight: 100, exerciseId: "asdf")
+        SaveExerciseButton(sets: 10, reps: 10, weight: 100, name: "asdf")
     }
 }

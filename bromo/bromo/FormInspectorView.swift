@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-
-
-
 struct FormInspectorView: View {
 
     var body: some View {

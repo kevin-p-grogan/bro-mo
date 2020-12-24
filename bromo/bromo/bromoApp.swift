@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct bromoApp: App {
-    let context = BroDataStore.context
+    let context = PersistenceController.sharedContext
     var body: some Scene {
         WindowGroup {
             MainView().environment(\.managedObjectContext, context)

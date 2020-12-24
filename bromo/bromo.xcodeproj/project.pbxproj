@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA67925946DAA00A038BF /* LogView.swift */; };
 		AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93D2533856A0035DC87 /* bromoApp.swift */; };
 		AA59C9402533856A0035DC87 /* WorkoutGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */; };
 		AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9412533856B0035DC87 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA1AA67925946DAA00A038BF /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		AA59C93A2533856A0035DC87 /* bromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA59C93D2533856A0035DC87 /* bromoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bromoApp.swift; sourceTree = "<group>"; };
 		AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutGeneratorView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				AA59C9462533856B0035DC87 /* Info.plist */,
 				AA59C9432533856B0035DC87 /* Preview Content */,
 				AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */,
+				AA1AA67925946DAA00A038BF /* LogView.swift */,
 				AAAA0026253CADE6001E4EF4 /* MainView.swift */,
 				AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */,
 			);
@@ -299,6 +302,7 @@
 				AAAA0079253CCA42001E4EF4 /* Joint.swift in Sources */,
 				AAAA0081253CCA42001E4EF4 /* PoseNetInput.swift in Sources */,
 				AAAA006C253CCA42001E4EF4 /* PoseImageView.swift in Sources */,
+				AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */,
 				AAAA0076253CCA42001E4EF4 /* CGImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

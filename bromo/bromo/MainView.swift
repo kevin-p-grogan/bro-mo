@@ -18,6 +18,11 @@ struct MainView: View {
                     Image(systemName: "bolt.fill")
                     Text("Generate Workout")
                 }.environment(\.managedObjectContext, context)
+            LogView()
+                .tabItem {
+                    Image(systemName: "pencil")
+                    Text("Exercise Log")
+                }.environment(\.managedObjectContext, context)
             ConfigurationView(config: config)
                 .tabItem {
                     Image(systemName: "slider.horizontal.3")
