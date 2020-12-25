@@ -22,41 +22,9 @@ struct ExerciseSheetView: View {
                 ResampleButton(fetcher: fetcher, config: config, exerciseId: exercise.id)
                 Text(exercise.name).font(.title)
                 HStack{
-                    VStack{
-                        Text("Sets")
-                        Picker("Sets", selection: $sets) {
-                            ForEach(0 ..< 100) {
-                                Text("\($0)")
-                            }
-                        }.pickerStyle(WheelPickerStyle())
-                        .offset(y:-100)
-                    }
-                    .frame(width: 100)
-                    .clipped()
-                    VStack{
-                        Text("Reps")
-                        Picker("Reps", selection: $reps) {
-                            ForEach(0 ..< 100) {
-                                Text("\($0)")
-                            }
-                        }.pickerStyle(WheelPickerStyle())
-                        .offset(y:-100)
-                    }
-                    .frame(width: 100)
-                    .clipped()
-                    VStack{
-                        Text("Weight")
-                        Picker("Weight", selection: $weight) {
-                            ForEach(0 ..< 1000){
-                                if $0 % 5 == 0 {
-                                    Text("\($0) lbs")
-                                }
-                            }
-                        }.pickerStyle(WheelPickerStyle())
-                        .offset(y:-100)
-                    }
-                    .frame(width: 100)
-                    .clipped()
+                    SpinnerSelector(setValue: $sets, withTitle: "Sets", from: 0, to: 100)
+                    SpinnerSelector(setValue: $reps, withTitle: "Reps", from: 0, to: 100)
+                    SpinnerSelector(setValue: $weight, withTitle: "Weight", withUnit: "lbs", from: 0, to: 1000, by: 5)
                 }
                 .offset(y: 50)
                 SaveExerciseButton(sets: sets, reps: reps, weight: weight, name: exercise.name)
@@ -69,6 +37,48 @@ struct ExerciseSheetView: View {
         else {
             Text("Uh, oh Spaghetti-Os")
         }
+    }
+}
+
+struct SpinnerSelector: View {
+    @Binding var setValue: Int
+    var title: String
+    var start: Int
+    var finish: Int
+    var increment: Int
+    var unit: String
+    
+    init (setValue: Binding<Int>, withTitle: String, from: Int, to: Int) {
+        self._setValue = setValue
+        self.title = withTitle
+        self.start = from
+        self.finish = to
+        self.increment = 1
+        self.unit = ""
+    }
+    init (setValue: Binding<Int>, withTitle: String, withUnit: String, from: Int, to: Int, by: Int) {
+        self._setValue = setValue
+        self.title = withTitle
+        self.start = from
+        self.finish = to
+        self.increment = by
+        self.unit = withUnit
+    }
+    
+    var body: some View {
+        VStack{
+            Text(title)
+            Picker(title, selection: $setValue) {
+                ForEach(start ..< finish){
+                    if $0 % increment == 0 {
+                        Text(["\($0)", unit].joined(separator: " "))
+                    }
+                }
+            }.pickerStyle(WheelPickerStyle())
+            .offset(y:-100)
+        }
+        .frame(width: 100)
+        .clipped()
     }
 }
 
