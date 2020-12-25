@@ -107,18 +107,12 @@
 		AA59C93C2533856A0035DC87 /* bromo */ = {
 			isa = PBXGroup;
 			children = (
-				AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */,
-				AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */,
+				AA74FA9F25965EC600CF4135 /* Views */,
 				AA8625CA2546116500D2B60E /* Data */,
 				AA59C93D2533856A0035DC87 /* bromoApp.swift */,
-				AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */,
 				AA59C9412533856B0035DC87 /* Assets.xcassets */,
 				AA59C9462533856B0035DC87 /* Info.plist */,
 				AA59C9432533856B0035DC87 /* Preview Content */,
-				AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */,
-				AA1AA67925946DAA00A038BF /* LogView.swift */,
-				AAAA0026253CADE6001E4EF4 /* MainView.swift */,
-				AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */,
 			);
 			path = bromo;
 			sourceTree = "<group>";
@@ -131,9 +125,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AA74FA9F25965EC600CF4135 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */,
+				AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */,
+				AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */,
+				AA1AA67925946DAA00A038BF /* LogView.swift */,
+				AAAA0026253CADE6001E4EF4 /* MainView.swift */,
+				AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AA8625CA2546116500D2B60E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */,
 				AA8625CB2546118300D2B60E /* BroDataStore.swift */,
 				AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */,
 			);
