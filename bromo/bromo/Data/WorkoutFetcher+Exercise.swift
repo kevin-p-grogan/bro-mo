@@ -112,3 +112,8 @@ struct Exercise: Codable, Identifiable {
     }
         
 }
+
+struct GeneratorParameters: Codable {
+    let workout: String
+    let week: String
+}

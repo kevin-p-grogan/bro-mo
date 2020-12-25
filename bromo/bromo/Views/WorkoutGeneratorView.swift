@@ -80,13 +80,6 @@ struct ScheduleView: View {
     }
 }
 
-
-struct GeneratorParameters: Codable {
-    let workout: String
-    let week: String
-}
-
-
 struct WorkoutGenerator_Previews: PreviewProvider {
     static var previews: some View {
         SaveExerciseButton(sets: 10, reps: 10, weight: 100, name: "asdf")
