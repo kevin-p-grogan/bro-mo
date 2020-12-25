@@ -47,8 +47,10 @@ struct ExerciseSheetView: View {
                     VStack{
                         Text("Weight")
                         Picker("Weight", selection: $weight) {
-                            ForEach(0 ..< 200){
-                                Text("\($0 * 5) lbs")
+                            ForEach(0 ..< 1000){
+                                if $0 % 5 == 0 {
+                                    Text("\($0) lbs")
+                                }
                             }
                         }.pickerStyle(WheelPickerStyle())
                         .offset(y:-100)
