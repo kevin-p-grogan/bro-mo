@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct bromoApp: App {
     let context = PersistenceController.sharedContext
+    let test = allLifts
     var body: some Scene {
         WindowGroup {
             MainView().environment(\.managedObjectContext, context)

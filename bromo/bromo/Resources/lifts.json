@@ -1,0 +1,5446 @@
+[
+     {
+          "name":"back raises",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"good mornings with cambered bar, and chains",
+          "rating":3,
+          "equipment":[
+               "cambered bar",
+               "chains"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"bridge press with buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"raised deadlift with straight bar",
+          "rating":8,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"landmine squat and press with straight bar",
+          "rating":6,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"wide grip push up with box, and slingshot",
+          "rating":8,
+          "equipment":[
+               "box",
+               "slingshot"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip push up",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Zercher squat with bands, and straight bar",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"middle grip bench press with buffalo bar, buckets, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Bulgarian split squat with bands, and kettlebell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "kettlebell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"hip thrust with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip bench press with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"face pull with bands",
+          "rating":8,
+          "equipment":[
+               "bands"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"close grip push up with box, and slingshot",
+          "rating":8,
+          "equipment":[
+               "box",
+               "slingshot"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with bands, and cambered bar",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "cambered bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"wide grip bench press with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with chains, safety squat bar, and box",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "safety squat bar",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with bands, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with bands, and dumbbell",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with safety squat bar, and box",
+          "rating":10,
+          "equipment":[
+               "safety squat bar",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"tricep kickbacks with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"deficit deadlift with straight bar",
+          "rating":8,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"back squat with bands, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"wide grip bench press with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"seal row with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"middle grip push up with box, and slingshot",
+          "rating":8,
+          "equipment":[
+               "box",
+               "slingshot"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"hang clean with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"front squat with bands, cambered bar, and box",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "cambered bar",
+               "box"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with buffalo bar, buckets, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with buffalo bar, buckets, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline bench press with buffalo bar, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with bands, and dumbbell",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with cambered bar, and box",
+          "rating":5,
+          "equipment":[
+               "cambered bar",
+               "box"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"hip abductor with machine",
+          "rating":9,
+          "equipment":[
+               "machine"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with fat gripz, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"push press with fat gripz, and football bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with bands, and safety squat bar",
+          "rating":3,
+          "equipment":[
+               "bands",
+               "safety squat bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"Romanian deadlift with dumbbell",
+          "rating":6,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"supinated grip row with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"wide grip bench press with foam, buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back raises with chains",
+          "rating":5,
+          "equipment":[
+               "chains"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"wide grip push up with slingshot",
+          "rating":8,
+          "equipment":[
+               "slingshot"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with football bar",
+          "rating":10,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with bands, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"tricep dip",
+          "rating":10,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"landmine deadlift with straight bar",
+          "rating":6,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"close grip bench press with slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline bench press with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"suitcase carries with dumbbell",
+          "rating":3,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with bands, safety squat bar, and box",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "safety squat bar",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"row with football bar",
+          "rating":10,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"floor press with foam, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with foam, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Sissy squat",
+          "rating":7,
+          "equipment":[
+
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"goblet squat with kettlebell",
+          "rating":6,
+          "equipment":[
+               "kettlebell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bridge press with foam, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Guillotine bench press with buffalo bar",
+          "rating":7,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"pullover with dumbbell",
+          "rating":10,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"good mornings with bands, cambered bar, and box",
+          "rating":3,
+          "equipment":[
+               "bands",
+               "cambered bar",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"floor press with slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with bands, buffalo bar, and box",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Zercher squat with buckets, and straight bar",
+          "rating":6,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"middle grip bench press with foam, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"row with cable",
+          "rating":7,
+          "equipment":[
+               "cable"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"bench elevated glute bridge",
+          "rating":6,
+          "equipment":[
+
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"wide grip bench press with foam, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"conventional deadlift with chains, and trap bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "trap bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"bridge press with chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Guillotine bench press with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Bradford press with straight bar",
+          "rating":6,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"two-legged glute bridge",
+          "rating":6,
+          "equipment":[
+
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"close grip bench press with foam, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with bands, fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with bands, fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with fat gripz, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with safety squat bar, box, and buckets",
+          "rating":10,
+          "equipment":[
+               "safety squat bar",
+               "box",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with bands, foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"tricep extensions with dumbbell, and cable",
+          "rating":5,
+          "equipment":[
+               "dumbbell",
+               "cable"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with cambered bar",
+          "rating":5,
+          "equipment":[
+               "cambered bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip push up with chains",
+          "rating":8,
+          "equipment":[
+               "chains"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with foam, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with box, and straight bar",
+          "rating":10,
+          "equipment":[
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"chest dip",
+          "rating":10,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"curl with dumbbell",
+          "rating":8,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"floor press with football bar",
+          "rating":10,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with fat gripz, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Hack squat with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with foam, buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip push up with bands",
+          "rating":8,
+          "equipment":[
+               "bands"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip chin up",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"floor press with buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"curl with bands, and dumbbell",
+          "rating":8,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"good mornings with buffalo bar, and chains",
+          "rating":3,
+          "equipment":[
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"wide grip bench press with foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"leg curl with dumbbell",
+          "rating":6,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"lateral raises with dumbbell",
+          "rating":8,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with bands, buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with buffalo bar",
+          "rating":7,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Guillotine bench press with buffalo bar, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back raises with bands",
+          "rating":5,
+          "equipment":[
+               "bands"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip push up",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"pulldowns",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"Spoto bench press with fat gripz, and football bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with box, buckets, and straight bar",
+          "rating":5,
+          "equipment":[
+               "box",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip push up with bands",
+          "rating":8,
+          "equipment":[
+               "bands"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with buffalo bar, chains, and box",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Guillotine bench press with fat gripz, and football bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with bands, safety squat bar, and box",
+          "rating":3,
+          "equipment":[
+               "bands",
+               "safety squat bar",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"plie squat with kettlebell",
+          "rating":6,
+          "equipment":[
+               "kettlebell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"v raises with bands, and dumbbell",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"upright row with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"hanging knee raises",
+          "rating":7,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"floor press with bands, foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"goblet squat with bands, and dumbbell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"incline press with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"rolling tricep extensions with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip chin up",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"close grip bench press with foam, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with foam, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"seal row with football bar",
+          "rating":7,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"chest supported row with machine",
+          "rating":7,
+          "equipment":[
+               "machine"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"pull through with bands",
+          "rating":8,
+          "equipment":[
+               "bands"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"lat pulldowns with machine",
+          "rating":5,
+          "equipment":[
+               "machine"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"good mornings with cambered bar",
+          "rating":3,
+          "equipment":[
+               "cambered bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"close grip push up with chains, and box",
+          "rating":8,
+          "equipment":[
+               "chains",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Olympic squat with chains, box, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with fat gripz, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with buffalo bar, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bench press with bands, and dumbbell",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"fly with bands, and dumbbell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with fat gripz, and football bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with buffalo bar, chains, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline press with dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with bands, and straight bar",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"snatch with dumbbell",
+          "rating":8,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"front squat with straight bar",
+          "rating":5,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"wide grip bench press with foam, buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"hip abductor with bands",
+          "rating":9,
+          "equipment":[
+               "bands"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with bands, foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip push up with chains",
+          "rating":8,
+          "equipment":[
+               "chains"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with football bar",
+          "rating":10,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip push up with bands, and box",
+          "rating":8,
+          "equipment":[
+               "bands",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"pronated grip inverted row",
+          "rating":7,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"decline press with buffalo bar, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Spoto bench press with buffalo bar, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with bands, fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back raises with bands, and straight bar",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip bench press with bands, buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Anderson squat with bands, rack, and straight bar",
+          "rating":4,
+          "equipment":[
+               "bands",
+               "rack",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bridge press with fat gripz, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with cambered bar, and box",
+          "rating":3,
+          "equipment":[
+               "cambered bar",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"glute ham raises with bands, and GHR",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "GHR"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"v raises with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with machine",
+          "rating":6,
+          "equipment":[
+               "machine"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with fat gripz, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bench press with bands, dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip push up with bands",
+          "rating":8,
+          "equipment":[
+               "bands"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Tate press with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with football bar",
+          "rating":10,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with fat gripz, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Olympic squat with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"good mornings with safety squat bar",
+          "rating":3,
+          "equipment":[
+               "safety squat bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"floor press with foam, buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with cambered bar, chains, and box",
+          "rating":3,
+          "equipment":[
+               "cambered bar",
+               "chains",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"wide grip pull up",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"close grip push up with box",
+          "rating":8,
+          "equipment":[
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with bands, foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with bands, buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back raises with chains, and straight bar",
+          "rating":5,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"floor press with foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with fat gripz, and football bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Olympic squat with buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bench press with dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline bench press with buffalo bar",
+          "rating":7,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Bulgarian split squat with kettlebell",
+          "rating":6,
+          "equipment":[
+               "kettlebell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with fat gripz, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Nordic leg curl",
+          "rating":6,
+          "equipment":[
+
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with fat gripz, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"landmine squat with box, and straight bar",
+          "rating":7,
+          "equipment":[
+               "box",
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bridge press with fat gripz, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"conventional deadlift with trap bar",
+          "rating":10,
+          "equipment":[
+               "trap bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"close grip bench press with buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"chest press with machine",
+          "rating":6,
+          "equipment":[
+               "machine"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"around the worlds",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"neutral grip inverted row",
+          "rating":7,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"floor press with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"x walks with bands",
+          "rating":9,
+          "equipment":[
+               "bands"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"plie squat with bands, and kettlebell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "kettlebell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Hack squat with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Anderson squat with rack, buckets, and straight bar",
+          "rating":4,
+          "equipment":[
+               "rack",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"back raises with bands, and dumbbell",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"hip thrust with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"skull crushers with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Tate press with bands, and dumbbell",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with bands, foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip push up with slingshot",
+          "rating":8,
+          "equipment":[
+               "slingshot"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline bench press with fat gripz, and football bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with cambered bar, and chains",
+          "rating":5,
+          "equipment":[
+               "cambered bar",
+               "chains"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"plie squat with bands, and dumbbell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with bands, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with cambered bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "cambered bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"seated deadlift with box, and straight bar",
+          "rating":5,
+          "equipment":[
+               "box",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"good mornings with safety squat bar, and box",
+          "rating":3,
+          "equipment":[
+               "safety squat bar",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"Spoto bench press with football bar",
+          "rating":7,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Guillotine bench press with fat gripz, and straight bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with cambered bar, and buckets",
+          "rating":5,
+          "equipment":[
+               "cambered bar",
+               "buckets"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"plie squat with dumbbell",
+          "rating":6,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with foam, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with buffalo bar, chains, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with chains, box, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline press with bands, and dumbbell",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"glute ham raises with GHR",
+          "rating":7,
+          "equipment":[
+               "GHR"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"floor press with foam, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with bands, fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with box, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "box",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with bands, buffalo bar, and box",
+          "rating":3,
+          "equipment":[
+               "bands",
+               "buffalo bar",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"overhead tricep extensions with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Olympic squat with box, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "box",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"mountain climbers",
+          "rating":6,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"middle grip bench press with buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bench dip",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"hang clean with box, and straight bar",
+          "rating":7,
+          "equipment":[
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"pull up with box",
+          "rating":8,
+          "equipment":[
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"close grip bench press with buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bench press with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front raises with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with bands, foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"raised deadlift with rack, and straight bar",
+          "rating":8,
+          "equipment":[
+               "rack",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip bench press with foam, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with safety squat bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "safety squat bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"middle grip bench press with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip push up with bands, and box",
+          "rating":8,
+          "equipment":[
+               "bands",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"weighted reverse crunch",
+          "rating":10,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"bridge press with slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with buffalo bar, chains, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"pullover with bands, and dumbbell",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"landmine squat with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Bulgarian split squat with bands, and dumbbell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Pendlay row with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"Z press with bands, dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"scissor kicks",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"Pendlay row with football bar",
+          "rating":10,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"bridge press with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"push press with football bar",
+          "rating":7,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Pendlay row with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"floor press with fat gripz, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"push press with buffalo bar, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with fat gripz, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"goblet squat with bands, and kettlebell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "kettlebell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Anderson squat with rack, chains, and straight bar",
+          "rating":4,
+          "equipment":[
+               "rack",
+               "chains",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"pronated grip row with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"close grip push up",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with foam, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Zercher squat with straight bar",
+          "rating":6,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"decline press with football bar",
+          "rating":7,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"standard planks",
+          "rating":3,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"leg press with machine",
+          "rating":6,
+          "equipment":[
+               "machine"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bridge press with foam, buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with cambered bar, and box",
+          "rating":10,
+          "equipment":[
+               "cambered bar",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"snatch grip high pull with box, and straight bar",
+          "rating":10,
+          "equipment":[
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"floor press with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with foam, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with cambered bar, box, and buckets",
+          "rating":5,
+          "equipment":[
+               "cambered bar",
+               "box",
+               "buckets"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with foam, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"push press with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with fat gripz, and straight bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"snatch grip high pull with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"back squat with cambered bar, chains, and box",
+          "rating":10,
+          "equipment":[
+               "cambered bar",
+               "chains",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Spoto bench press with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Anderson squat with rack, and straight bar",
+          "rating":4,
+          "equipment":[
+               "rack",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"good mornings with buffalo bar",
+          "rating":3,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with cambered bar, and chains",
+          "rating":10,
+          "equipment":[
+               "cambered bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with bands, fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"overhead tricep extensions with bands, and dumbbell",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with buckets, and straight bar",
+          "rating":5,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"seal row with buffalo bar",
+          "rating":7,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"snatch grip deadlift with chains, and straight bar",
+          "rating":8,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"belt squat with machine",
+          "rating":8,
+          "equipment":[
+               "machine"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"JM press with straight bar",
+          "rating":5,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with bands, fat gripz, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"sumo deadlift with bands, and straight bar",
+          "rating":8,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"floor press with foam, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Guillotine bench press with football bar",
+          "rating":7,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline bench press with football bar",
+          "rating":7,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with bands, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with bands, foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"chin up with box",
+          "rating":8,
+          "equipment":[
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"bridge press with fat gripz, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Roman chair situps",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"wide grip bench press with bands, foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip push up with chains, and box",
+          "rating":8,
+          "equipment":[
+               "chains",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with bands, and buffalo bar",
+          "rating":3,
+          "equipment":[
+               "bands",
+               "buffalo bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"Dimmel deadlift with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"supinated grip inverted row",
+          "rating":7,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"single leg deadlift with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip bench press with buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with foam, buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with bands, dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"dip with bands",
+          "rating":5,
+          "equipment":[
+               "bands"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with football bar",
+          "rating":7,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"overhead tricep extensions with straight bar",
+          "rating":5,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with buffalo bar, and box",
+          "rating":3,
+          "equipment":[
+               "buffalo bar",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"v situps",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"back squat with safety squat bar",
+          "rating":10,
+          "equipment":[
+               "safety squat bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"step up with box",
+          "rating":7,
+          "equipment":[
+               "box"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with football bar",
+          "rating":10,
+          "equipment":[
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Romanian deadlift with bands, and straight bar",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with bands, dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Chinese planks",
+          "rating":3,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"wide grip bench press with buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Russian twists",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"back squat with chains, and safety squat bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "safety squat bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bridge press with bands, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"pull up with bands",
+          "rating":8,
+          "equipment":[
+               "bands"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"Z press with bands, and dumbbell",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Z press with dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"side bends",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"close grip bench press with chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with box, and straight bar",
+          "rating":5,
+          "equipment":[
+               "box",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"shoulder press with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with bands, buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip pull up",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"middle grip bench press with buffalo bar, chains, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"deficit deadlift with blocks, and straight bar",
+          "rating":8,
+          "equipment":[
+               "blocks",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"wide grip bench press with bands, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with fat gripz, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with buffalo bar, chains, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with buffalo bar, chains, and box",
+          "rating":3,
+          "equipment":[
+               "buffalo bar",
+               "chains",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"Bulgarian split squat with dumbbell",
+          "rating":6,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bridge press with fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"supinated grip row with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"bridge press with buffalo bar, buckets, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Spoto bench press with fat gripz, and straight bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"row with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"wide grip bench press with bands, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with cambered bar, box, and buckets",
+          "rating":10,
+          "equipment":[
+               "cambered bar",
+               "box",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with foam, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with fat gripz, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with buffalo bar",
+          "rating":7,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with foam, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"calf raises with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"overhead tricep extensions with bands, and straight bar",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"farmers walks with dumbbell",
+          "rating":6,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"front squat with chains, and straight bar",
+          "rating":5,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"back raises with chains, and dumbbell",
+          "rating":5,
+          "equipment":[
+               "chains",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"front squat with cambered bar, chains, and box",
+          "rating":5,
+          "equipment":[
+               "cambered bar",
+               "chains",
+               "box"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"floor press with fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"swings with kettlebell",
+          "rating":10,
+          "equipment":[
+               "kettlebell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"push press with buffalo bar",
+          "rating":7,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Romanian deadlift with straight bar",
+          "rating":7,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"good mornings with bands, and cambered bar",
+          "rating":3,
+          "equipment":[
+               "bands",
+               "cambered bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"conventional deadlift with bands, and trap bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "trap bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"Z press with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with fat gripz, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with foam, buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with foam, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with bands, box, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"good mornings with chains, safety squat bar, and box",
+          "rating":3,
+          "equipment":[
+               "chains",
+               "safety squat bar",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"bridge press with fat gripz, chains, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Olympic squat with bands, box, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"chin up with bands",
+          "rating":8,
+          "equipment":[
+               "bands"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"front raises with straight bar",
+          "rating":5,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"good mornings with chains, and safety squat bar",
+          "rating":3,
+          "equipment":[
+               "chains",
+               "safety squat bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"sumo deadlift with chains, and straight bar",
+          "rating":8,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip bench press with buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"IYT raises with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back raises with straight bar",
+          "rating":5,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"conventional deadlift with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"middle grip push up with box",
+          "rating":8,
+          "equipment":[
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with fat gripz, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Sissy squat with bands",
+          "rating":7,
+          "equipment":[
+               "bands"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"spread eagle situps",
+          "rating":5,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"middle grip push up with chains, and box",
+          "rating":8,
+          "equipment":[
+               "chains",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"upright row with straight bar",
+          "rating":5,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"tricep extensions with bands, and dumbbell",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Spoto bench press with buffalo bar",
+          "rating":7,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"ab rollers",
+          "rating":10,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"fly with dumbbell",
+          "rating":6,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Hack squat with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"middle grip bench press with foam, buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"incline bench press with fat gripz, and straight bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with bands, and safety squat bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "safety squat bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"middle grip bench press with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"belt squat",
+          "rating":8,
+          "equipment":[
+
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"back squat with bands, cambered bar, and box",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "cambered bar",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"middle grip push up with chains",
+          "rating":8,
+          "equipment":[
+               "chains"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with foam, slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with foam, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"side planks",
+          "rating":3,
+          "equipment":[
+
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"front squat with bands, box, and straight bar",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "box",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"push press with fat gripz, and straight bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"decline press with fat gripz, and straight bar",
+          "rating":7,
+          "equipment":[
+               "fat gripz",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"calf raises with dumbbell",
+          "rating":7,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"shoulder press with dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with bands, and buffalo bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip bench press with buffalo bar, buckets, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"wide grip push up with box",
+          "rating":8,
+          "equipment":[
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with foam, slingshot, and straight bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "slingshot",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with cambered bar",
+          "rating":10,
+          "equipment":[
+               "cambered bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with fat gripz, chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with slingshot, and football bar",
+          "rating":10,
+          "equipment":[
+               "slingshot",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"middle grip bench press with buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"deficit deadlift with rack, and straight bar",
+          "rating":8,
+          "equipment":[
+               "rack",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"close grip bench press with fat gripz, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"bridge press with bands, fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Olympic squat with box, and straight bar",
+          "rating":10,
+          "equipment":[
+               "box",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Olympic squat with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip bench press with fat gripz, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back raises with dumbbell",
+          "rating":5,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"bridge press with foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with buffalo bar, and box",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "box"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"one-legged glute bridge",
+          "rating":6,
+          "equipment":[
+
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"JM press with bands, and straight bar",
+          "rating":5,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip push up with bands, and box",
+          "rating":8,
+          "equipment":[
+               "bands",
+               "box"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"close grip bench press with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"front squat with chains, box, and straight bar",
+          "rating":5,
+          "equipment":[
+               "chains",
+               "box",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"pronated grip row with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"incline press with bands, dumbbell, and fat gripz",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "dumbbell",
+               "fat gripz"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"goblet squat with dumbbell",
+          "rating":6,
+          "equipment":[
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"bridge press with foam, buffalo bar, and slingshot",
+          "rating":10,
+          "equipment":[
+               "foam",
+               "buffalo bar",
+               "slingshot"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with buffalo bar, box, and buckets",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "box",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"raised deadlift with blocks, and straight bar",
+          "rating":8,
+          "equipment":[
+               "blocks",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"bridge press with buffalo bar, and buckets",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "buckets"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with bands, and cambered bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "cambered bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"Olympic squat with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"leg curl with bands",
+          "rating":6,
+          "equipment":[
+               "bands"
+          ],
+          "category":"accessory",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"Dimmel deadlift with bands, and straight bar",
+          "rating":7,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"snatch grip deadlift with bands, and straight bar",
+          "rating":8,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"Zercher squat with chains, and straight bar",
+          "rating":6,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"secondary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"wide grip bench press with fat gripz, buckets, and straight bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"back squat with buffalo bar",
+          "rating":10,
+          "equipment":[
+               "buffalo bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower push"
+     },
+     {
+          "name":"close grip push up with slingshot",
+          "rating":8,
+          "equipment":[
+               "slingshot"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"Romanian deadlift with bands, and dumbbell",
+          "rating":6,
+          "equipment":[
+               "bands",
+               "dumbbell"
+          ],
+          "category":"assistance",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"close grip bench press with fat gripz, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"conventional deadlift with bands, and straight bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"sled push with sled",
+          "rating":8,
+          "equipment":[
+               "sled"
+          ],
+          "category":"conditioning",
+          "direction_and_group":"conditioning"
+     },
+     {
+          "name":"wide grip bench press with buffalo bar, and chains",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "chains"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"conventional deadlift with straight bar",
+          "rating":10,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"lower pull"
+     },
+     {
+          "name":"bridge press with chains, and straight bar",
+          "rating":10,
+          "equipment":[
+               "chains",
+               "straight bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with fat gripz, buckets, and football bar",
+          "rating":10,
+          "equipment":[
+               "fat gripz",
+               "buckets",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"floor press with buffalo bar, and fat gripz",
+          "rating":10,
+          "equipment":[
+               "buffalo bar",
+               "fat gripz"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     },
+     {
+          "name":"landmine row with straight bar",
+          "rating":6,
+          "equipment":[
+               "straight bar"
+          ],
+          "category":"assistance",
+          "direction_and_group":"upper pull"
+     },
+     {
+          "name":"wide grip bench press with bands, foam, and football bar",
+          "rating":10,
+          "equipment":[
+               "bands",
+               "foam",
+               "football bar"
+          ],
+          "category":"primary",
+          "direction_and_group":"upper push"
+     }
+]

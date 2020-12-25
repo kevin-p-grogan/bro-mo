@@ -14,6 +14,8 @@
 		AA59C9402533856A0035DC87 /* WorkoutGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */; };
 		AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9412533856B0035DC87 /* Assets.xcassets */; };
 		AA59C9452533856B0035DC87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9442533856B0035DC87 /* Preview Assets.xcassets */; };
+		AA74FAA8259670EF00CF4135 /* lifts.json in Resources */ = {isa = PBXBuildFile; fileRef = AA74FAA7259670EF00CF4135 /* lifts.json */; };
+		AA74FAAB25967D1800CF4135 /* Lift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74FAAA25967D1800CF4135 /* Lift.swift */; };
 		AA8625CC2546118300D2B60E /* BroDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8625CB2546118300D2B60E /* BroDataStore.swift */; };
 		AA8625D2254611D600D2B60E /* BroDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */; };
 		AAAA0024253CABEB001E4EF4 /* FormInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */; };
@@ -50,6 +52,8 @@
 		AA59C9412533856B0035DC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA59C9442533856B0035DC87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA59C9462533856B0035DC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA74FAA7259670EF00CF4135 /* lifts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lifts.json; sourceTree = "<group>"; };
+		AA74FAAA25967D1800CF4135 /* Lift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lift.swift; sourceTree = "<group>"; };
 		AA8625CB2546118300D2B60E /* BroDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroDataStore.swift; sourceTree = "<group>"; };
 		AA8625D1254611D600D2B60E /* BroDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BroDataModel.xcdatamodel; sourceTree = "<group>"; };
 		AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInspectorView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		AA59C93C2533856A0035DC87 /* bromo */ = {
 			isa = PBXGroup;
 			children = (
+				AA74FAA225966BF300CF4135 /* Resources */,
 				AA74FA9F25965EC600CF4135 /* Views */,
 				AA8625CA2546116500D2B60E /* Data */,
 				AA59C93D2533856A0035DC87 /* bromoApp.swift */,
@@ -138,12 +143,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AA74FAA225966BF300CF4135 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA74FAA7259670EF00CF4135 /* lifts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AA8625CA2546116500D2B60E /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */,
 				AA8625CB2546118300D2B60E /* BroDataStore.swift */,
 				AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */,
+				AA74FAAA25967D1800CF4135 /* Lift.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -281,6 +295,7 @@
 			files = (
 				AA59C9452533856B0035DC87 /* Preview Assets.xcassets in Resources */,
 				AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */,
+				AA74FAA8259670EF00CF4135 /* lifts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +331,7 @@
 				AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */,
 				AAAA007E253CCA42001E4EF4 /* PoseBuilderConfiguration.swift in Sources */,
 				AAAA0079253CCA42001E4EF4 /* Joint.swift in Sources */,
+				AA74FAAB25967D1800CF4135 /* Lift.swift in Sources */,
 				AAAA0081253CCA42001E4EF4 /* PoseNetInput.swift in Sources */,
 				AAAA006C253CCA42001E4EF4 /* PoseImageView.swift in Sources */,
 				AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */,
