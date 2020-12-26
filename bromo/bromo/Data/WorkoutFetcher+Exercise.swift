@@ -51,6 +51,15 @@ public class WorkoutFetcher: ObservableObject {
         filteredLifts.forEach{samplingArray.append(contentsOf: Array(repeating: $0, count: $0.rating))}
         return samplingArray.randomElement() ?? lifts.randomElement()!
     }
+    
+    func getScheduledExerciseNameBy(id: String) -> String {
+        if let exercise = workoutSchedule.first(where: {$0.id == id}){
+            return exercise.name
+        }
+        else {
+            return ""
+        }
+    }
 }
 
 struct Exercise: Codable, Identifiable, Hashable {

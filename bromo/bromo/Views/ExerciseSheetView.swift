@@ -20,7 +20,7 @@ struct ExerciseSheetView: View {
         if let exercise = currentExercise {
             VStack{
                 ResampleButton(fetcher: fetcher, config: config, exerciseId: exercise.id)
-                Text(exercise.name).font(.title)
+                Text(fetcher.getScheduledExerciseNameBy(id: exercise.id)).font(.title)
                 HStack{
                     SpinnerSelector(setValue: $sets, withTitle: "Sets", from: 0, to: 100)
                     SpinnerSelector(setValue: $reps, withTitle: "Reps", from: 0, to: 100)

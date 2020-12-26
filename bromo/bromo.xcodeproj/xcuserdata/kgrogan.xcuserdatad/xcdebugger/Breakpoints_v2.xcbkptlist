@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DE34EB41-5CB7-44DE-B5CC-B3407993E40C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bromo/Data/WorkoutFetcher+Exercise.swift"
@@ -66,6 +66,54 @@
             endingLineNumber = "50"
             landmarkName = "pickLift(_:_:_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "076DF251-1281-4554-A128-6A220D6D54BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bromo/Data/WorkoutFetcher+Exercise.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchExercise(_:_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "076DF251-1281-4554-A128-6A220D6D54BC - a7972a103e4228c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bromo.WorkoutFetcher.fetchExercise(Swift.String, Swift.String, Swift.String) -&gt; ()"
+                  moduleName = "bromo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kgrogan/Projects/Personal/bro-mo/bromo/bromo/Data/WorkoutFetcher+Exercise.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "483">
+               </Location>
+               <Location
+                  uuid = "076DF251-1281-4554-A128-6A220D6D54BC - 1dcf9694d0b5bb0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (bromo.Exercise) -&gt; Swift.Bool in bromo.WorkoutFetcher.fetchExercise(Swift.String, Swift.String, Swift.String) -&gt; ()"
+                  moduleName = "bromo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kgrogan/Projects/Personal/bro-mo/bromo/bromo/Data/WorkoutFetcher+Exercise.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
