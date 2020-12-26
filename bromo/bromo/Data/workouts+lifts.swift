@@ -15,7 +15,16 @@ struct Lift: Hashable, Codable {
     var rating: Int
     var equipment: [String]
     var category: String
-    var directionAndGroup: String
+    private var rawDirectionAndGroup: String?
+    var directionAndGroup: String {
+        set{
+            rawDirectionAndGroup = newValue
+        }
+        get {
+            // set to category to match the handling the Lift data
+            return rawDirectionAndGroup ?? category
+        }
+    }
     
     enum CodingKeys: String, CodingKey {
         // create a name map for the keys from the JSON file
@@ -23,19 +32,28 @@ struct Lift: Hashable, Codable {
         case rating
         case equipment
         case category
-        case directionAndGroup = "direction_and_group"
+        case rawDirectionAndGroup = "direction_and_group"
     }
 }
 
 struct WorkoutExercise: Hashable, Codable {
     var category: String
-    var directionAndGroup: String?
     var order: Int
     var setsAndReps: String
+    private var rawDirectionAndGroup: String?
+    var directionAndGroup: String {
+        set{
+            rawDirectionAndGroup = newValue
+        }
+        get {
+            // set to category to match the handling the Lift data
+            return rawDirectionAndGroup ?? category
+        }
+    }
     
     enum CodingKeys: String, CodingKey {
         case category
-        case directionAndGroup = "direction_and_group"
+        case rawDirectionAndGroup = "direction_and_group"
         case order
         case setsAndReps = "sets and reps"
     }

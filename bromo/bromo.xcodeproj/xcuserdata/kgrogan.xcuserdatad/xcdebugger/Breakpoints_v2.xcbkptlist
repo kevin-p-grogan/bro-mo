@@ -39,8 +39,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "735BB520-E272-4C7F-832D-072851C21AA5"
-            shouldBeEnabled = "No"
+            uuid = "DE34EB41-5CB7-44DE-B5CC-B3407993E40C"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bromo/Data/WorkoutFetcher+Exercise.swift"
@@ -49,6 +49,22 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "fetchWorkout(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D93EA859-9A00-4EBE-931B-C11FA4F17E70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bromo/Data/WorkoutFetcher+Exercise.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "pickLift(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

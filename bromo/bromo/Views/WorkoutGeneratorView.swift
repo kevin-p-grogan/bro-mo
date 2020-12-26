@@ -58,24 +58,18 @@ struct ScheduleView: View {
 
 
     var body: some View {
-        if fetcher.isLoading {
-            Text("Loading...")
-                .padding(10)
-        }
-        else {
-            List(fetcher.workoutSchedule) { exercise in
-                VStack (alignment: .leading) {
-                    ExerciseItemView(exerciseItem: ExerciseItem(exercise: exercise))
-                }
-                .onTapGesture {
-                    self.editExercise = true
-                    self.currentExercise = exercise
-                }
-            }.sheet(isPresented: $editExercise){
-                ExerciseSheetView(fetcher: fetcher, config: config, currentExercise: $currentExercise)
-                    .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
-                    .environment(\.managedObjectContext, context)
+        List(fetcher.workoutSchedule) { exercise in
+            VStack (alignment: .leading) {
+                ExerciseItemView(exerciseItem: ExerciseItem(exercise: exercise))
             }
+            .onTapGesture {
+                self.editExercise = true
+                self.currentExercise = exercise
+            }
+        }.sheet(isPresented: $editExercise){
+            ExerciseSheetView(fetcher: fetcher, config: config, currentExercise: $currentExercise)
+                .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+                .environment(\.managedObjectContext, context)
         }
     }
 }
