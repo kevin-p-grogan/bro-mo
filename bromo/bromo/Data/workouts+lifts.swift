@@ -7,7 +7,8 @@
 
 import Foundation
 
-let allLifts: [Lift] = load("lifts.json")
+let lifts: [Lift] = load("lifts.json")
+let workouts: [String: [String: WorkoutExercise]] = load("workouts.json")
 
 struct Lift: Hashable, Codable {
     var name: String
@@ -23,6 +24,20 @@ struct Lift: Hashable, Codable {
         case equipment
         case category
         case directionAndGroup = "direction_and_group"
+    }
+}
+
+struct WorkoutExercise: Hashable, Codable {
+    var category: String
+    var directionAndGroup: String?
+    var order: Int
+    var setsAndReps: String
+    
+    enum CodingKeys: String, CodingKey {
+        case category
+        case directionAndGroup = "direction_and_group"
+        case order
+        case setsAndReps = "sets and reps"
     }
 }
 

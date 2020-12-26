@@ -27,7 +27,7 @@ public class WorkoutFetcher: ObservableObject {
         guard let request = createRequest(using: workoutParameters, at: url) else {return}
         setWorkout(using: request, onlyExerciseID: exerciseID)
     }
-    
+
     func createRequest(using parameters:GeneratorParameters, at url: URL) -> URLRequest? {
         let encoder = JSONEncoder()
         guard let uploadData = try? encoder.encode(parameters) else {return nil}
@@ -37,8 +37,8 @@ public class WorkoutFetcher: ObservableObject {
         request.httpBody = uploadData
         return request
     }
-    
-    func setWorkout(using request: URLRequest, onlyExerciseID eid: String? = nil) {
+
+    private func setWorkout(using request: URLRequest, onlyExerciseID eid: String? = nil) {
         // insert json data to the request
         let session = URLSession.shared
         self.isLoading = true
@@ -67,7 +67,7 @@ public class WorkoutFetcher: ObservableObject {
                 print("Uh oh, spaghetti-os")
             }
         }
-        
+
         task.resume()
     }
     

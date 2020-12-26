@@ -1,0 +1,706 @@
+{
+     "Upper Push Recovery": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "12x2",
+               "direction_and_group": "upper push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "8x3",
+               "direction_and_group": "upper pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Upper Push Hypertrophy": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "5x5",
+               "direction_and_group": "upper push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x8",
+               "direction_and_group": "upper pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Upper Push Strength": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "3x3",
+               "direction_and_group": "upper push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "4x6",
+               "direction_and_group": "upper pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Upper Push Test": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "1x1",
+               "direction_and_group": "upper push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x3",
+               "direction_and_group": "upper pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Upper Pull Recovery": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "12x2",
+               "direction_and_group": "upper pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "8x3",
+               "direction_and_group": "upper push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Upper Pull Hypertrophy": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "5x5",
+               "direction_and_group": "upper pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x8",
+               "direction_and_group": "upper push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Upper Pull Strength": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "3x3",
+               "direction_and_group": "upper pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "4x6",
+               "direction_and_group": "upper push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Upper Pull Test": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "1x1",
+               "direction_and_group": "upper pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x3",
+               "direction_and_group": "upper push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "upper push"
+          },
+          "Circuit B": {
+               "direction_and_group": "upper pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "upper push"
+          },
+          "Burner B": {
+               "direction_and_group": "upper pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          }
+     },
+     "Lower Push Recovery": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "12x2",
+               "direction_and_group": "lower push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "8x3",
+               "direction_and_group": "lower pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     },
+     "Lower Push Hypertrophy": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "5x5",
+               "direction_and_group": "lower push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x8",
+               "direction_and_group": "lower pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     },
+     "Lower Push Strength": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "3x3",
+               "direction_and_group": "lower push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "4x6",
+               "direction_and_group": "lower pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     },
+     "Lower Push Test": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "1x1",
+               "direction_and_group": "lower push",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x3",
+               "direction_and_group": "lower pull",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     },
+     "Lower Pull Recovery": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "12x1",
+               "direction_and_group": "lower pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "8x3",
+               "direction_and_group": "lower push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     },
+     "Lower Pull Hypertrophy": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "1x5",
+               "direction_and_group": "lower pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x8",
+               "direction_and_group": "lower push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     },
+     "Lower Pull Strength": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "1x3",
+               "direction_and_group": "lower pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "4x6",
+               "direction_and_group": "lower push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     },
+     "Lower Pull Test": {
+          "Primary": {
+               "category": "primary",
+               "sets and reps": "1x1",
+               "direction_and_group": "lower pull",
+               "order": 0
+          },
+          "Secondary": {
+               "category": "secondary",
+               "sets and reps": "3x3",
+               "direction_and_group": "lower push",
+               "order": 1
+          },
+          "Circuit A": {
+               "order": 2,
+               "category": "assistance",
+               "sets and reps": "3x12",
+               "direction_and_group": "lower push"
+          },
+          "Circuit B": {
+               "direction_and_group": "lower pull",
+               "order": 3,
+               "category": "assistance",
+               "sets and reps": "3x12"
+          },
+          "Burner A": {
+               "order": 5,
+               "category": "accessory",
+               "sets and reps": "1x40",
+               "direction_and_group": "lower push"
+          },
+          "Burner B": {
+               "direction_and_group": "lower pull",
+               "order": 6,
+               "category": "accessory",
+               "sets and reps": "1x40"
+          },
+          "Circuit C": {
+               "category": "conditioning",
+               "direction_and_group": null,
+               "order": 4,
+               "sets and reps": "3x12"
+          }
+     }
+}
