@@ -9,6 +9,18 @@ import Foundation
 
 let lifts: [Lift] = load("lifts.json")
 let workouts: [String: [String: WorkoutExercise]] = load("workouts.json")
+let weeks = ["Recovery", "Hypertrophy", "Strength", "Test"]
+let bodyGroups = ["Upper", "Lower"]
+let movementDirections = ["Push", "Pull"]
+let weeklyRoutine = [ // mapping from the day of the week to the workout definition index
+    (bodyGroupIndex: 0, movementDirectionIndex: 0),
+    (bodyGroupIndex: 0, movementDirectionIndex: 0),
+    (bodyGroupIndex: 1, movementDirectionIndex: 1),
+    (bodyGroupIndex: 1, movementDirectionIndex: 1),
+    (bodyGroupIndex: 0, movementDirectionIndex: 1),
+    (bodyGroupIndex: 0, movementDirectionIndex: 1),
+    (bodyGroupIndex: 1, movementDirectionIndex: 0),
+]
 
 struct Lift: Hashable, Codable {
     var name: String
@@ -58,6 +70,7 @@ struct WorkoutExercise: Hashable, Codable {
         case setsAndReps = "sets and reps"
     }
 }
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

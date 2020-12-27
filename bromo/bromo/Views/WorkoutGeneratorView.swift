@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WorkoutGeneratorView: View {
     @ObservedObject var config: Configuration
-    @ObservedObject var fetcher = WorkoutFetcher()
+    @ObservedObject var fetcher: WorkoutFetcher
     @Environment(\.managedObjectContext) var context
     
     var body: some View {
@@ -27,7 +27,7 @@ struct GenerationButton: View {
     
     var body: some View{
         Button(action: {
-            self.fetcher.fetchWorkout(config.getWorkoutType(), config.week)
+            self.fetcher.populateWorkoutSchedule(config)
         }) {
             Text("Generate")
                 .font(.title)

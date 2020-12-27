@@ -90,7 +90,7 @@ struct ResampleButton: View {
     
     var body: some View{
         Button(action: {
-            self.fetcher.fetchExercise(exerciseId, config.getWorkoutType(), config.week)
+            self.fetcher.replaceExercise(exerciseId)
         }) {
             Text("Resample")
                 .font(.title)
@@ -150,9 +150,11 @@ struct ExerciseSheetView_Previews: PreviewProvider {
         PreviewWrapper()
     }
     struct PreviewWrapper: View {  // Used to set up the state for the view
+        var config = Configuration()
         @State var currentExercise: Exercise? = Exercise(name: "Test Name", setsAndReps: "5X5", id: "Test Primary")
+        
         var body: some View {
-            ExerciseSheetView(fetcher: WorkoutFetcher(), config: Configuration(), currentExercise: $currentExercise)
+            ExerciseSheetView(fetcher: WorkoutFetcher(config: config), config: config, currentExercise: $currentExercise)
         }
     }
 }

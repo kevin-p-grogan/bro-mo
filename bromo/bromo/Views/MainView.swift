@@ -13,7 +13,7 @@ struct MainView: View {
     
     var body: some View {
         TabView {
-            WorkoutGeneratorView(config: config)
+            WorkoutGeneratorView(config: config, fetcher: WorkoutFetcher(config: config))
                 .tabItem {
                     Image(systemName: "bolt.fill")
                     Text("Generate Workout")

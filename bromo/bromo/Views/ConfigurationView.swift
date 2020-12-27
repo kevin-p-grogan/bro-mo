@@ -15,14 +15,14 @@ struct ConfigurationView: View {
             Form {
                 Section {
                     Picker(selection: $config.week, label: Text("Week")) {
-                        ForEach(Configuration.weeks, id:\.self) { week in
+                        ForEach(weeks, id:\.self) { week in
                             Text(week)
                         }
                     }
                 }
                 Section {
                     Picker("Body Group", selection: $config.bodyGroup) {
-                        ForEach(Configuration.bodyGroups, id:\.self) { bg in
+                        ForEach(bodyGroups, id:\.self) { bg in
                             Text(bg)
                         }
                     }
@@ -30,7 +30,7 @@ struct ConfigurationView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 Section {
                     Picker("Movement Direction", selection: $config.movementDirection) {
-                        ForEach(Configuration.movementDirections, id:\.self) { md in
+                        ForEach(movementDirections, id:\.self) { md in
                             Text(md)
                         }
                     }
@@ -42,14 +42,40 @@ struct ConfigurationView: View {
 }
 
 class Configuration: ObservableObject {
-    @Published var week = weeks[0]
-    @Published var bodyGroup = bodyGroups[0]
-    @Published var movementDirection = movementDirections[0]
-    static let weeks = ["Recovery", "Hypertrophy", "Strength", "Test"]
-    static let bodyGroups = ["Upper", "Lower"]
-    static let movementDirections = ["Push", "Pull"]
+    @Published var week: String
+    @Published var bodyGroup: String
+    @Published var movementDirection: String
+
+    var workout: String {
+        get {
+            return self.bodyGroup + " " + self.movementDirection
+        }
+    }
+    // TODO: Make config initialization relative to log
+    private static var referenceDate: Date {
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+        return df.date(from: "2020-12-07")!
+    }
     
-    func getWorkoutType() -> String { return self.bodyGroup + " " + self.movementDirection }
+    init() {
+        let currentDate = Date()
+        let timeInterval = currentDate.timeIntervalSince(Configuration.referenceDate)
+        let currentWeekIndex = Int(timeInterval.weeks) % weeks.count
+        let currentDayIndex = Int(timeInterval.days) % weeklyRoutine.count
+        week = weeks[currentWeekIndex]
+        bodyGroup = bodyGroups[weeklyRoutine[currentDayIndex].bodyGroupIndex]
+        movementDirection = movementDirections[weeklyRoutine[currentDayIndex].movementDirectionIndex]
+    }
+}
+
+extension TimeInterval {
+    var days: Double {
+        return self / (24 * 60 * 60)  // Number of seconds in a day
+    }
+    var weeks: Double {
+        return self / (24 * 60 * 60 * 7)  // Number of seconds in a week
+    }
 }
 
 struct ConfigurationView_Previews: PreviewProvider {

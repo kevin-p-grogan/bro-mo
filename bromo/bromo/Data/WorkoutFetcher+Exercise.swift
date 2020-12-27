@@ -12,12 +12,20 @@ import Combine
 public class WorkoutFetcher: ObservableObject {
     
     typealias ExerciseList = [Exercise]
-    @Published var workoutSchedule = ExerciseList()
+    @Published var workoutSchedule: [Exercise]
     
-    func fetchWorkout(_ workout: String, _ week: String) {
-        // Populates the workout schedule for the given workout and week.
+    init(config: Configuration) {
+        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week)
+    }
+    
+    init(workout: String, week: String) {
+        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(workout, week)
+    }
+    
+    static private func createWorkoutSchedule(_ workout: String, _ week: String) -> ExerciseList {
+        // Creates an list of exercises based on the workout type and week.
         let fullWorkoutName = [workout, week].joined(separator: " ")
-        guard let fullWorkout = workouts[fullWorkoutName] else {return}
+        guard let fullWorkout = workouts[fullWorkoutName] else {return ExerciseList()}
         var exercises = Dictionary<Int, Exercise>()
         for (workoutExerciseName, workoutExercise) in fullWorkout {
             let excludedExerciseNames = Set(exercises.values.map{$0.name})
@@ -27,20 +35,24 @@ public class WorkoutFetcher: ObservableObject {
         }
         
         let sortedKeys = exercises.keys.sorted()
-        workoutSchedule = ExerciseList()
-        sortedKeys.forEach{workoutSchedule.append(exercises[$0]!)}
+        return sortedKeys.map{exercises[$0]!}
     }
     
-    func fetchExercise(_ exerciseID: String, _ workout: String, _ week: String) {
+    func populateWorkoutSchedule(_ config: Configuration) {
+        // Populates the workout schedule for the given workout and week.
+        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week)
+    }
+    
+    func replaceExercise(_ exerciseID: String) {
         let excludedExerciseNames = Set(workoutSchedule.map{$0.name})
         let currentExerciseIndex = workoutSchedule.firstIndex{$0.id == exerciseID}!
         let currentExercise = workoutSchedule[currentExerciseIndex]
         let currentLift = lifts.first{$0.name == currentExercise.name}!
-        let lift = pickLift(currentLift.category, currentLift.directionAndGroup, excludedExerciseNames)
+        let lift = WorkoutFetcher.pickLift(currentLift.category, currentLift.directionAndGroup, excludedExerciseNames)
         workoutSchedule[currentExerciseIndex].name = lift.name
     }
     
-    private func pickLift(_ category: String, _ directionAndGroup: String,  _ excludedExerciseNames: Set<String>) -> Lift {
+    private static func pickLift(_ category: String, _ directionAndGroup: String,  _ excludedExerciseNames: Set<String>) -> Lift {
         // Picks a lift from the constant lifts array via weighted random sample
         let filteredLifts = lifts.filter{
                 (category == $0.category)
