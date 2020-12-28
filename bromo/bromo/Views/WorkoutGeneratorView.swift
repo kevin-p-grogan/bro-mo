@@ -23,10 +23,12 @@ struct WorkoutGeneratorView: View {
 struct GenerationButton: View {
     var fetcher: WorkoutFetcher
     var config: Configuration
+    @Environment(\.managedObjectContext) var context
+    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
     
     var body: some View{
         Button(action: {
-            self.fetcher.populateWorkoutSchedule(config)
+            self.fetcher.populateWorkoutSchedule(config, filteredWords: filteredItems.map{$0.filteredWord ?? ""})
         }) {
             Text("Generate")
                 .font(.title)

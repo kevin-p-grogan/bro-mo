@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ConfigurationView: View {
     @ObservedObject var config: Configuration
-    @State var filteredWord: String = ""
-    @State private var isEditing = false
+
     
     var body: some View {
         NavigationView {
@@ -33,18 +32,34 @@ struct ConfigurationView: View {
                     }.pickerStyle(SegmentedPickerStyle())
                 }
                 Section {
-                    TextField("Add Filtered Word", text: $filteredWord) { isEditing in
-                        self.isEditing = isEditing
-                    } onCommit: {
-                        config.addFilteredWord(word: filteredWord)
-                    }
-                    List{
-                        ForEach(config.filteredWords, id: \.self) {word in
-                            Text(word)
-                        }.onDelete(perform: config.deleteFilteredWords)
-                    }
+                    FilterView()
                 }
             }.navigationBarTitle("Configure")
+        }
+    }
+}
+
+struct FilterView: View {
+    @State var filteredWord: String = ""
+    @State private var isEditing = false
+    @Environment(\.managedObjectContext) var context
+    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[NSSortDescriptor(key: "filteredWord", ascending: true)]) var filteredItems: FetchedResults<FilteredItem>
+    
+    var body: some View {
+        TextField("Add Filtered Word", text: $filteredWord) { isEditing in
+            self.isEditing = isEditing
+        } onCommit: {
+            let newItem = FilteredItem(context: context)
+            newItem.filteredWord = filteredWord
+            saveContext(context)
+        }
+        List{
+            ForEach(filteredItems) { fi in
+                Text(fi.filteredWord ?? "")
+            }.onDelete{indexSet in
+                indexSet.forEach{context.delete(filteredItems[$0])}
+                saveContext(context)
+            }
         }
     }
 }
@@ -54,7 +69,6 @@ class Configuration: ObservableObject {
     @Published var bodyGroup: String
     @Published var movementDirection: String
     @Published var filteredWords: [String]
-    @Environment(\.managedObjectContext) var context
 
 
     var workout: String {

@@ -84,10 +84,12 @@ struct ResampleButton: View {
     var fetcher: WorkoutFetcher
     var config: Configuration
     var exerciseId: String
+    @Environment(\.managedObjectContext) var context
+    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
     
     var body: some View{
         Button(action: {
-            self.fetcher.replaceExercise(exerciseId, config)
+            self.fetcher.replaceExercise(exerciseId, config, filteredWords: filteredItems.map{$0.filteredWord ?? ""})
         }) {
             Text("Resample")
                 .font(.title)

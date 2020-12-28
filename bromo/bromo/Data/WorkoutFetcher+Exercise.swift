@@ -10,15 +10,15 @@ import Combine
 
 
 public class WorkoutFetcher: ObservableObject {
-    
     typealias ExerciseList = [Exercise]
     @Published var workoutSchedule: [Exercise]
     
-    init(config: Configuration) {
-        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, config.filteredWords)
+    
+    init(config: Configuration, filteredWords: [String] = []) {
+        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, filteredWords)
     }
     
-    static private func createWorkoutSchedule(_ workout: String, _ week: String, _ filteredWords: [String]) -> ExerciseList {
+    static private func createWorkoutSchedule(_ workout: String, _ week: String, _ filteredWords: [String] = []) -> ExerciseList {
         // Creates an list of exercises based on the workout type and week.
         let fullWorkoutName = [workout, week].joined(separator: " ")
         guard let fullWorkout = workouts[fullWorkoutName] else {return ExerciseList()}
@@ -35,13 +35,13 @@ public class WorkoutFetcher: ObservableObject {
         return sortedKeys.map{exercises[$0]!}
     }
     
-    func populateWorkoutSchedule(_ config: Configuration) {
+    func populateWorkoutSchedule(_ config: Configuration, filteredWords: [String] = []) {
         // Populates the workout schedule for the given workout and week.
-        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, config.filteredWords)
+        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, filteredWords)
     }
     
-    func replaceExercise(_ exerciseID: String, _ config: Configuration) {
-        let filteredSubstrings = Set(workoutSchedule.map{$0.name}).union(Set(config.filteredWords))
+    func replaceExercise(_ exerciseID: String, _ config: Configuration, filteredWords: [String] = []) {
+        let filteredSubstrings = Set(workoutSchedule.map{$0.name}).union(Set(filteredWords))
         let currentExerciseIndex = workoutSchedule.firstIndex{$0.id == exerciseID}!
         let currentExercise = workoutSchedule[currentExerciseIndex]
         let currentLift = lifts.first{$0.name == currentExercise.name}!
