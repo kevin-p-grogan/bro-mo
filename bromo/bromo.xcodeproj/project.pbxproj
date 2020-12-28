@@ -19,7 +19,6 @@
 		AA8625CC2546118300D2B60E /* BroDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8625CB2546118300D2B60E /* BroDataStore.swift */; };
 		AA8625D2254611D600D2B60E /* BroDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */; };
 		AAA417722596CAA1006B8CD5 /* workouts.json in Resources */ = {isa = PBXBuildFile; fileRef = AAA417712596CAA1006B8CD5 /* workouts.json */; };
-		AAAA0024253CABEB001E4EF4 /* FormInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */; };
 		AAAA0027253CADE6001E4EF4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0026253CADE6001E4EF4 /* MainView.swift */; };
 		AAAA006B253CCA42001E4EF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0042253CCA42001E4EF4 /* ViewController.swift */; };
 		AAAA006C253CCA42001E4EF4 /* PoseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0043253CCA42001E4EF4 /* PoseImageView.swift */; };
@@ -58,7 +57,6 @@
 		AA8625CB2546118300D2B60E /* BroDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroDataStore.swift; sourceTree = "<group>"; };
 		AA8625D1254611D600D2B60E /* BroDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BroDataModel.xcdatamodel; sourceTree = "<group>"; };
 		AAA417712596CAA1006B8CD5 /* workouts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workouts.json; sourceTree = "<group>"; };
-		AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInspectorView.swift; sourceTree = "<group>"; };
 		AAAA0026253CADE6001E4EF4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AAAA0042253CCA42001E4EF4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAAA0043253CCA42001E4EF4 /* PoseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseImageView.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 			children = (
 				AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */,
 				AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */,
-				AAAA0023253CABEB001E4EF4 /* FormInspectorView.swift */,
 				AA1AA67925946DAA00A038BF /* LogView.swift */,
 				AAAA0026253CADE6001E4EF4 /* MainView.swift */,
 				AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */,
@@ -315,7 +312,6 @@
 				AAAA006B253CCA42001E4EF4 /* ViewController.swift in Sources */,
 				AAAA0075253CCA42001E4EF4 /* CGPoint+Extension.swift in Sources */,
 				AAAA0082253CCA42001E4EF4 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
-				AAAA0024253CABEB001E4EF4 /* FormInspectorView.swift in Sources */,
 				AA1AA6A42595357600A038BF /* ExerciseSheetView.swift in Sources */,
 				AAAA0077253CCA42001E4EF4 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
 				AAAA0027253CADE6001E4EF4 /* MainView.swift in Sources */,
