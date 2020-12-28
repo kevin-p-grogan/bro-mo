@@ -18,7 +18,6 @@ struct ExerciseSheetView: View {
     var body: some View {
         if let exercise = currentExercise {
             VStack{
-                ResampleButton(fetcher: fetcher, config: config, exerciseId: exercise.id)
                 Text(fetcher.getScheduledExerciseNameBy(id: exercise.id)).font(.title)
                 HStack{
                     SpinnerSelector(setValue: $sets, withTitle: "Sets", from: 0, to: 100)
@@ -26,7 +25,7 @@ struct ExerciseSheetView: View {
                     SpinnerSelector(setValue: $weight, withTitle: "Weight", withUnit: "lbs", from: 0, to: 1000, by: 5)
                 }
                 .offset(y: 50)
-                SaveExerciseButton(sets: sets, reps: reps, weight: weight, name: exercise.name)
+                SaveButton(sets: sets, reps: reps, weight: weight, name: exercise.name)
             }.onAppear {
                 sets = exercise.sets
                 reps = exercise.reps
@@ -80,36 +79,7 @@ struct SpinnerSelector: View {
     }
 }
 
-struct ResampleButton: View {
-    var fetcher: WorkoutFetcher
-    var config: Configuration
-    var exerciseId: String
-    @Environment(\.managedObjectContext) var context
-    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
-    
-    var body: some View{
-        Button(action: {
-            self.fetcher.replaceExercise(exerciseId, config, filteredWords: filteredItems.map{$0.filteredWord ?? ""})
-        }) {
-            Text("Resample")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding()
-                .background(Color.yellow)
-                .cornerRadius(40)
-                .foregroundColor(.black)
-                .padding(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.yellow, lineWidth: 5)
-                )
-                
-        }
-        .padding(10)
-    }
-}
-
-struct SaveExerciseButton: View {
+struct SaveButton: View {
     var sets: Int
     var reps: Int
     var weight: Int
@@ -123,19 +93,13 @@ struct SaveExerciseButton: View {
             saveContext(context)
             showingAlert = true
         }) {
-            Text("Save Exercsise")
+            Text("Save")
                 .font(.title)
                 .fontWeight(.bold)
                 .padding()
                 .background(Color.yellow)
-                .cornerRadius(40)
+                .cornerRadius(10)
                 .foregroundColor(.black)
-                .padding(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.yellow, lineWidth: 5)
-                )
-                
         }.alert(isPresented: $showingAlert) {
             Alert(title: Text("Exercise Saved!"), dismissButton: .default(Text("OK")))
         }

@@ -11,7 +11,7 @@
 		AA1AA6A42595357600A038BF /* ExerciseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */; };
 		AA1AA6A52595357600A038BF /* WorkoutFetcher+Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */; };
 		AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93D2533856A0035DC87 /* bromoApp.swift */; };
-		AA59C9402533856A0035DC87 /* WorkoutGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */; };
+		AA59C9402533856A0035DC87 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutView.swift */; };
 		AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9412533856B0035DC87 /* Assets.xcassets */; };
 		AA59C9452533856B0035DC87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9442533856B0035DC87 /* Preview Assets.xcassets */; };
 		AA74FAA8259670EF00CF4135 /* lifts.json in Resources */ = {isa = PBXBuildFile; fileRef = AA74FAA7259670EF00CF4135 /* lifts.json */; };
@@ -48,7 +48,7 @@
 		AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WorkoutFetcher+Exercise.swift"; sourceTree = "<group>"; };
 		AA59C93A2533856A0035DC87 /* bromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA59C93D2533856A0035DC87 /* bromoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bromoApp.swift; sourceTree = "<group>"; };
-		AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutGeneratorView.swift; sourceTree = "<group>"; };
+		AA59C93F2533856A0035DC87 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		AA59C9412533856B0035DC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA59C9442533856B0035DC87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA59C9462533856B0035DC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */,
-				AA59C93F2533856A0035DC87 /* WorkoutGeneratorView.swift */,
+				AA59C93F2533856A0035DC87 /* WorkoutView.swift */,
 				AA1AA67925946DAA00A038BF /* LogView.swift */,
 				AAAA0026253CADE6001E4EF4 /* MainView.swift */,
 				AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */,
@@ -320,7 +320,7 @@
 				AAAA0080253CCA42001E4EF4 /* PoseNet.swift in Sources */,
 				AAAA007B253CCA42001E4EF4 /* PoseBuilder+Single.swift in Sources */,
 				AAAA007C253CCA42001E4EF4 /* Pose.swift in Sources */,
-				AA59C9402533856A0035DC87 /* WorkoutGeneratorView.swift in Sources */,
+				AA59C9402533856A0035DC87 /* WorkoutView.swift in Sources */,
 				AAAA006E253CCA42001E4EF4 /* PopOverModalViewController.swift in Sources */,
 				AAAA006F253CCA42001E4EF4 /* GradientOverlayView.swift in Sources */,
 				AAAA0078253CCA42001E4EF4 /* VideoCapture.swift in Sources */,
