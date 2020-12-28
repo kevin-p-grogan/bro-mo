@@ -10,7 +10,6 @@ import SwiftUI
 struct ExerciseSheetView: View {
     @ObservedObject var fetcher: WorkoutFetcher
     @ObservedObject var config: Configuration
-    @Environment(\.managedObjectContext) var context
     @Binding var currentExercise: Exercise?
     @State var sets: Int = 0
     @State var reps: Int = 0
@@ -28,7 +27,6 @@ struct ExerciseSheetView: View {
                 }
                 .offset(y: 50)
                 SaveExerciseButton(sets: sets, reps: reps, weight: weight, name: exercise.name)
-                    .environment(\.managedObjectContext, context)
             }.onAppear {
                 sets = exercise.sets
                 reps = exercise.reps
@@ -86,7 +84,6 @@ struct ResampleButton: View {
     var fetcher: WorkoutFetcher
     var config: Configuration
     var exerciseId: String
-    @Environment(\.managedObjectContext) var context
     
     var body: some View{
         Button(action: {

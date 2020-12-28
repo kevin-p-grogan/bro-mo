@@ -10,12 +10,11 @@ import SwiftUI
 struct WorkoutGeneratorView: View {
     @ObservedObject var config: Configuration
     @ObservedObject var fetcher: WorkoutFetcher
-    @Environment(\.managedObjectContext) var context
     
     var body: some View {
         VStack {
             GenerationButton(fetcher: fetcher, config: config)
-            ScheduleView(fetcher: fetcher, config: config).environment(\.managedObjectContext, context)
+            ScheduleView(fetcher: fetcher, config: config)
             Spacer()
         }
     }
@@ -52,7 +51,6 @@ struct GenerationButton: View {
 struct ScheduleView: View {
     @ObservedObject var fetcher: WorkoutFetcher
     @ObservedObject var config: Configuration
-    @Environment(\.managedObjectContext) var context
     @State var editExercise = false
     @State var currentExercise: Exercise? = nil
 
@@ -69,7 +67,6 @@ struct ScheduleView: View {
         }.sheet(isPresented: $editExercise){
             ExerciseSheetView(fetcher: fetcher, config: config, currentExercise: $currentExercise)
                 .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
-                .environment(\.managedObjectContext, context)
         }
     }
 }

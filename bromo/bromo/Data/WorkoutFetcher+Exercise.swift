@@ -55,6 +55,7 @@ public class WorkoutFetcher: ObservableObject {
             let lift = $0
             return (category == lift.category)
                 &&  (directionAndGroup == lift.directionAndGroup)
+                // Check that the name of the lift does not contain any of the filter substrings
                 &&  (!filteredSubstrings.contains{lift.name.lowercased().contains($0.lowercased())})
         }
         var samplingArray = [Lift]()

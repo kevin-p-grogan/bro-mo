@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ConfigurationView: View {
     @ObservedObject var config: Configuration
+    @Environment(\.managedObjectContext) var context
     @State var filteredWord: String = ""
     @State private var isEditing = false
     
@@ -54,6 +55,8 @@ class Configuration: ObservableObject {
     @Published var bodyGroup: String
     @Published var movementDirection: String
     @Published var filteredWords: [String]
+    @Environment(\.managedObjectContext) var context
+
 
     var workout: String {
         get {

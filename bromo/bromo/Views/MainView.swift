@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var config = Configuration()
     @Environment(\.managedObjectContext) var context
+    @ObservedObject var config = Configuration()
     
     var body: some View {
         TabView {
@@ -17,12 +17,12 @@ struct MainView: View {
                 .tabItem {
                     Image(systemName: "bolt.fill")
                     Text("Generate Workout")
-                }.environment(\.managedObjectContext, context)
+                }
             LogView()
                 .tabItem {
                     Image(systemName: "pencil")
                     Text("Exercise Log")
-                }.environment(\.managedObjectContext, context)
+                }
             ConfigurationView(config: config)
                 .tabItem {
                     Image(systemName: "slider.horizontal.3")
