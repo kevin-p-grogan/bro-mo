@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ConfigurationView: View {
     @ObservedObject var config: Configuration
+    @State var filteredWord: String = ""
+    @State private var isEditing = false
     
     var body: some View {
         NavigationView {
@@ -19,24 +21,30 @@ struct ConfigurationView: View {
                             Text(week)
                         }
                     }
-                }
-                Section {
                     Picker("Body Group", selection: $config.bodyGroup) {
                         ForEach(bodyGroups, id:\.self) { bg in
                             Text(bg)
                         }
-                    }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                Section {
+                    }.pickerStyle(SegmentedPickerStyle())
                     Picker("Movement Direction", selection: $config.movementDirection) {
                         ForEach(movementDirections, id:\.self) { md in
                             Text(md)
                         }
+                    }.pickerStyle(SegmentedPickerStyle())
+                }
+                Section {
+                    TextField("Add Filtered Word", text: $filteredWord) { isEditing in
+                        self.isEditing = isEditing
+                    } onCommit: {
+                        config.addFilteredWord(word: filteredWord)
+                    }
+                    List{
+                        ForEach(config.filteredWords, id: \.self) {word in
+                            Text(word)
+                        }.onDelete(perform: config.deleteFilteredWords)
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
-            }
+            }.navigationBarTitle("Configure")
         }
     }
 }
@@ -45,6 +53,7 @@ class Configuration: ObservableObject {
     @Published var week: String
     @Published var bodyGroup: String
     @Published var movementDirection: String
+    @Published var filteredWords: [String]
 
     var workout: String {
         get {
@@ -66,6 +75,17 @@ class Configuration: ObservableObject {
         week = weeks[currentWeekIndex]
         bodyGroup = bodyGroups[weeklyRoutine[currentDayIndex].bodyGroupIndex]
         movementDirection = movementDirections[weeklyRoutine[currentDayIndex].movementDirectionIndex]
+        filteredWords  = [String]()
+    }
+    
+    func addFilteredWord(word: String) {
+        if !filteredWords.contains(word) {
+            filteredWords.append(word)
+        }
+    }
+    
+    func deleteFilteredWords(at offsets: IndexSet) {
+        filteredWords.remove(atOffsets: offsets)
     }
 }
 

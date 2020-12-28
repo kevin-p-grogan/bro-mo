@@ -15,23 +15,20 @@ public class WorkoutFetcher: ObservableObject {
     @Published var workoutSchedule: [Exercise]
     
     init(config: Configuration) {
-        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week)
+        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, config.filteredWords)
     }
     
-    init(workout: String, week: String) {
-        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(workout, week)
-    }
-    
-    static private func createWorkoutSchedule(_ workout: String, _ week: String) -> ExerciseList {
+    static private func createWorkoutSchedule(_ workout: String, _ week: String, _ filteredWords: [String]) -> ExerciseList {
         // Creates an list of exercises based on the workout type and week.
         let fullWorkoutName = [workout, week].joined(separator: " ")
         guard let fullWorkout = workouts[fullWorkoutName] else {return ExerciseList()}
         var exercises = Dictionary<Int, Exercise>()
+        var filteredSubstrings = Set(filteredWords)
         for (workoutExerciseName, workoutExercise) in fullWorkout {
-            let excludedExerciseNames = Set(exercises.values.map{$0.name})
-            let lift = pickLift(workoutExercise.category, workoutExercise.directionAndGroup, excludedExerciseNames)
+            let lift = pickLift(workoutExercise.category, workoutExercise.directionAndGroup, filteredSubstrings)
             let exercise = Exercise(name: lift.name, setsAndReps: workoutExercise.setsAndReps, id: workoutExerciseName)
             exercises[workoutExercise.order] = exercise
+            filteredSubstrings.insert(exercise.name)  // ensure that the exercise is not sampled again
         }
         
         let sortedKeys = exercises.keys.sorted()
@@ -40,28 +37,31 @@ public class WorkoutFetcher: ObservableObject {
     
     func populateWorkoutSchedule(_ config: Configuration) {
         // Populates the workout schedule for the given workout and week.
-        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week)
+        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, config.filteredWords)
     }
     
-    func replaceExercise(_ exerciseID: String) {
-        let excludedExerciseNames = Set(workoutSchedule.map{$0.name})
+    func replaceExercise(_ exerciseID: String, _ config: Configuration) {
+        let filteredSubstrings = Set(workoutSchedule.map{$0.name}).union(Set(config.filteredWords))
         let currentExerciseIndex = workoutSchedule.firstIndex{$0.id == exerciseID}!
         let currentExercise = workoutSchedule[currentExerciseIndex]
         let currentLift = lifts.first{$0.name == currentExercise.name}!
-        let lift = WorkoutFetcher.pickLift(currentLift.category, currentLift.directionAndGroup, excludedExerciseNames)
+        let lift = WorkoutFetcher.pickLift(currentLift.category, currentLift.directionAndGroup, filteredSubstrings)
         workoutSchedule[currentExerciseIndex].name = lift.name
     }
     
-    private static func pickLift(_ category: String, _ directionAndGroup: String,  _ excludedExerciseNames: Set<String>) -> Lift {
+    private static func pickLift(_ category: String, _ directionAndGroup: String,  _ filteredSubstrings: Set<String>) -> Lift {
         // Picks a lift from the constant lifts array via weighted random sample
         let filteredLifts = lifts.filter{
-                (category == $0.category)
-            &&  (directionAndGroup == $0.directionAndGroup)
-            &&  (!excludedExerciseNames.contains($0.name))
+            let lift = $0
+            return (category == lift.category)
+                &&  (directionAndGroup == lift.directionAndGroup)
+                &&  (!filteredSubstrings.contains{lift.name.lowercased().contains($0.lowercased())})
         }
         var samplingArray = [Lift]()
         filteredLifts.forEach{samplingArray.append(contentsOf: Array(repeating: $0, count: $0.rating))}
-        return samplingArray.randomElement() ?? lifts.randomElement()!
+        // The behavior here is to ignore the filtered substrings if no lifts are found.
+        return samplingArray.randomElement()
+            ?? lifts.filter{(category == $0.category) && (directionAndGroup == $0.directionAndGroup)}.randomElement()!
     }
     
     func getScheduledExerciseNameBy(id: String) -> String {
@@ -70,6 +70,15 @@ public class WorkoutFetcher: ObservableObject {
         }
         else {
             return ""
+        }
+    }
+    
+    private func filterWorkoutSchedule(_ filterWords: [String]) {
+        workoutSchedule = workoutSchedule.filter{
+            let exerciseName = $0.name
+            return !filterWords.contains{
+                exerciseName.contains($0)
+            }
         }
     }
 }

@@ -90,7 +90,7 @@ struct ResampleButton: View {
     
     var body: some View{
         Button(action: {
-            self.fetcher.replaceExercise(exerciseId)
+            self.fetcher.replaceExercise(exerciseId, config)
         }) {
             Text("Resample")
                 .font(.title)
