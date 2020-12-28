@@ -9,29 +9,23 @@ import SwiftUI
 
 struct LogView: View {
     @Environment(\.managedObjectContext) private var context
-    // Fetch requeest specifes the entities to fetch from the core data and how to arrange.
+    // Fetch request specifes the entities to fetch from the core data and how to arrange.
     @FetchRequest(entity: LogItem.entity(), sortDescriptors:[NSSortDescriptor(key: "date", ascending: false)]) var logItems: FetchedResults<LogItem>
     
     var body: some View {
-        VStack{
-            Text("Exercise Log").font(.title)
+        NavigationView{
             List {
                 ForEach(logItems) { li in
                     ExerciseItemView(exerciseItem: ExerciseItem(logItem: li))
                 }.onDelete { indexSet in
-                    for index in indexSet {
-                        context.delete(logItems[index])
-                    }
-                    do {
-                        try context.save()
-                    } catch {
-                        print(error.localizedDescription)
-                    }
+                    indexSet.forEach{context.delete(logItems[$0])}
+                    saveContext(context)
                 }
-            }
+            }.navigationBarTitle("Log")
         }
     }
 }
+
 
 struct ExerciseItemView: View{
     var exerciseItem: ExerciseItem

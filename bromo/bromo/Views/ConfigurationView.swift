@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ConfigurationView: View {
     @ObservedObject var config: Configuration
-    @Environment(\.managedObjectContext) var context
     @State var filteredWord: String = ""
     @State private var isEditing = false
     

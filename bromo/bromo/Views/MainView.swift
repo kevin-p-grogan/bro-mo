@@ -20,8 +20,8 @@ struct MainView: View {
                 }
             LogView()
                 .tabItem {
-                    Image(systemName: "pencil")
-                    Text("Exercise Log")
+                    Image(systemName: "square.and.pencil")
+                    Text("Log")
                 }
             ConfigurationView(config: config)
                 .tabItem {
