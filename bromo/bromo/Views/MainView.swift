@@ -16,7 +16,7 @@ struct MainView: View {
         TabView {
             WorkoutView(config: config, fetcher: WorkoutFetcher(config: config, filteredWords: filteredItems.map{$0.filteredWord ?? ""}))
                 .tabItem {
-                    Image(systemName: "bolt.circle")
+                    Image(systemName: "bolt.heart")
                 }
             LogView()
                 .tabItem {
@@ -29,6 +29,7 @@ struct MainView: View {
         }
         .font(.headline)
         .preferredColorScheme(.dark)
+        .accentColor(.red)
     }
 }
 

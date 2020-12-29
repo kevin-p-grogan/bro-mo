@@ -41,7 +41,7 @@ struct ExerciseSheetView: View {
                 exercise.reps = reps
                 exercise.weight = weight
                 fetcher.updateSchedule(with: exercise)
-            }
+            }.preferredColorScheme(.dark)
         }
         else {
             Text("Uh, oh Spaghetti-Os")
@@ -109,9 +109,9 @@ struct SaveButton: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .padding()
-                .background(Color.yellow)
+                .background(Color.red)
                 .cornerRadius(10)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
         }.alert(isPresented: $showingAlert) {
             Alert(title: Text("Exercise Saved!"), dismissButton: .default(Text("OK")))
         }
