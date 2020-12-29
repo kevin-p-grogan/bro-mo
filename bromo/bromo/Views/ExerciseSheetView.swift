@@ -11,6 +11,7 @@ struct ExerciseSheetView: View {
     @ObservedObject var fetcher: WorkoutFetcher
     @ObservedObject var config: Configuration
     @Binding var currentExercise: Exercise?
+    @State var name: String = ""
     @State var sets: Int = 0
     @State var reps: Int = 0
     @State var weight: Int = 0
@@ -18,19 +19,24 @@ struct ExerciseSheetView: View {
     var body: some View {
         if var exercise = currentExercise {
             VStack{
-                Text(fetcher.getScheduledExerciseNameBy(id: exercise.id)).font(.title)
+                TextEditor(text: $name)
+                    .font(.title2)
+                    .frame(width: 300, height: 100)
+                    .multilineTextAlignment(.center)
                 HStack{
                     SpinnerSelector(setValue: $sets, withTitle: "Sets", from: 0, to: 100)
                     SpinnerSelector(setValue: $reps, withTitle: "Reps", from: 0, to: 100)
                     SpinnerSelector(setValue: $weight, withTitle: "Weight", withUnit: "lbs", from: 0, to: 1000, by: 5)
                 }
                 .offset(y: 50)
-                SaveButton(sets: sets, reps: reps, weight: weight, name: exercise.name)
+                SaveButton(sets: sets, reps: reps, weight: weight, name: name)
             }.onAppear {
+                name = exercise.name
                 sets = exercise.sets
                 reps = exercise.reps
                 weight = exercise.weight ?? 0
             }.onDisappear{
+                exercise.name = name
                 exercise.sets = sets
                 exercise.reps = reps
                 exercise.weight = weight
