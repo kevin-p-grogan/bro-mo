@@ -65,12 +65,18 @@ public class WorkoutFetcher: ObservableObject {
             ?? lifts.filter{(category == $0.category) && (directionAndGroup == $0.directionAndGroup)}.randomElement()!
     }
     
-    func getScheduledExerciseNameBy(id: String) -> String {
+    func getScheduledExerciseNameBy(id: String?) -> String {
         if let exercise = workoutSchedule.first(where: {$0.id == id}){
             return exercise.name
         }
         else {
             return ""
+        }
+    }
+    
+    func updateSchedule(with exercise: Exercise) {
+        if let index = workoutSchedule.firstIndex(where: {$0.id == exercise.id}){
+            workoutSchedule[index] = exercise
         }
     }
     
@@ -87,7 +93,25 @@ public class WorkoutFetcher: ObservableObject {
 struct Exercise: Codable, Identifiable, Hashable {
     public var name: String
     public var setsAndReps: String
-    public var id: String
+    public var id: String?
+    public var weight: Int?
+    public var date: Date?
+    
+    init(logItem: LogItem) {
+        name = logItem.exercise ?? ""
+        setsAndReps = Exercise.combine(sets: Int(logItem.sets), reps: Int(logItem.reps))
+        weight = Int(logItem.weight)
+        date = logItem.date ?? Date()
+        id = nil
+    }
+    
+    init(name: String, setsAndReps: String, id: String) {
+        self.name = name
+        self.setsAndReps = setsAndReps
+        self.id = id
+        weight = nil
+        date = nil
+    }
     
     enum CodingKeys: String, CodingKey {
            case name = "Exercise"
@@ -97,29 +121,33 @@ struct Exercise: Codable, Identifiable, Hashable {
      
     public var sets: Int {
         set{
-            let reps = convertSetsAndReps().reps
-            self.setsAndReps = "\(newValue)x\(reps)"
+            let reps = Exercise.split(setsAndReps: self.setsAndReps).reps
+            self.setsAndReps = Exercise.combine(sets: newValue, reps: reps)
         }
         get {
-            return convertSetsAndReps().sets
+            return Exercise.split(setsAndReps: self.setsAndReps).sets
         }
     }
     
     public var reps: Int {
         set{
-            let sets = convertSetsAndReps().sets
-            self.setsAndReps = "\(sets)x\(newValue)"
+            let sets = Exercise.split(setsAndReps: self.setsAndReps).sets
+            self.setsAndReps = Exercise.combine(sets: sets, reps: newValue)
         }
         get {
-            return convertSetsAndReps().reps
+            return Exercise.split(setsAndReps: self.setsAndReps).reps
         }
     }
     
-    private func convertSetsAndReps() -> (sets: Int, reps: Int) {
-        let split = self.setsAndReps.components(separatedBy: "x")
+    private static func split(setsAndReps: String) -> (sets: Int, reps: Int) {
+        let split = setsAndReps.components(separatedBy: "x")
         let sets = Int(split.first ?? "0") ?? 0
         let reps = Int(split.last ?? "0") ?? 0
         return (sets: sets, reps: reps)
+    }
+    
+    private static func combine(sets: Int, reps: Int) -> String {
+        return "\(sets)x\(reps)"
     }
         
 }

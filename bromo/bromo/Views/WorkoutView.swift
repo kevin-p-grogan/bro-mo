@@ -13,42 +13,11 @@ struct WorkoutView: View {
     
     var body: some View {
         VStack {
-//            GenerationButton(fetcher: fetcher, config: config)
             ScheduleView(fetcher: fetcher, config: config)
             Spacer()
         }
     }
 }
-
-struct GenerationButton: View {
-    var fetcher: WorkoutFetcher
-    var config: Configuration
-    @Environment(\.managedObjectContext) var context
-    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
-    
-    var body: some View{
-        Button(action: {
-            self.fetcher.populateWorkoutSchedule(config, filteredWords: filteredItems.map{$0.filteredWord ?? ""})
-        }) {
-            Text("Generate")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding()
-                .background(Color.yellow)
-                .cornerRadius(40)
-                .foregroundColor(.black)
-                .padding(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.yellow, lineWidth: 5)
-                )
-                
-        }
-        .padding(10)
-    }
-}
-
-
 
 struct ScheduleView: View {
     @ObservedObject var fetcher: WorkoutFetcher
@@ -63,14 +32,15 @@ struct ScheduleView: View {
         NavigationView{
             List {
                 ForEach(fetcher.workoutSchedule) { exercise in
-                    ExerciseItemView(exerciseItem: ExerciseItem(exercise: exercise)).onTapGesture {
+                    ExerciseItemView(exercise: exercise).onTapGesture {
                         self.editExercise = true
                         self.currentExercise = exercise
                     }
                 }.onDelete { indexSet in
                     for index in indexSet {
-                        let exerciseId = fetcher.workoutSchedule[index].id
-                        fetcher.replaceExercise(exerciseId, config, filteredWords: filteredItems.map{$0.filteredWord ?? ""})
+                        if let exerciseId = fetcher.workoutSchedule[index].id {
+                            fetcher.replaceExercise(exerciseId, config, filteredWords: filteredItems.map{$0.filteredWord ?? ""})
+                        }
                     }
                 }
             }.navigationBarTitle("Workout")

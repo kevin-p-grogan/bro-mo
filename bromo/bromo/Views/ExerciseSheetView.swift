@@ -16,7 +16,7 @@ struct ExerciseSheetView: View {
     @State var weight: Int = 0
     
     var body: some View {
-        if let exercise = currentExercise {
+        if var exercise = currentExercise {
             VStack{
                 Text(fetcher.getScheduledExerciseNameBy(id: exercise.id)).font(.title)
                 HStack{
@@ -29,6 +29,12 @@ struct ExerciseSheetView: View {
             }.onAppear {
                 sets = exercise.sets
                 reps = exercise.reps
+                weight = exercise.weight ?? 0
+            }.onDisappear{
+                exercise.sets = sets
+                exercise.reps = reps
+                exercise.weight = weight
+                fetcher.updateSchedule(with: exercise)
             }
         }
         else {
