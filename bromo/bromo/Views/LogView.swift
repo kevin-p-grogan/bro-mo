@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LogView: View {
+    @State var editLogItem = false
+    @State var currentLogItem: LogItem? = nil
     @Environment(\.managedObjectContext) private var context
     // Fetch request specifes the entities to fetch from the core data and how to arrange.
     @FetchRequest(entity: LogItem.entity(), sortDescriptors:[NSSortDescriptor(key: "date", ascending: false)]) var logItems: FetchedResults<LogItem>
@@ -16,12 +18,44 @@ struct LogView: View {
         NavigationView{
             List {
                 ForEach(logItems) { li in
-                    ExerciseItemView(exercise: Exercise(logItem: li))
+                    ExerciseItemView(exercise: Exercise(logItem: li)).onTapGesture {
+                        self.editLogItem = true
+                        self.currentLogItem = li
+                    }
                 }.onDelete { indexSet in
                     indexSet.forEach{context.delete(logItems[$0])}
                     saveContext(context)
                 }
             }.navigationBarTitle("Log")
+        }.sheet(isPresented: $editLogItem){
+            LogSheetView(currentLogItem: $currentLogItem)
+                .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        }.onDisappear{
+            saveContext(context)
+        }
+    }
+}
+
+struct LogSheetView: View {
+    @Binding var currentLogItem: LogItem?
+    @State var name: String = ""
+    @State var sets: Int = 0
+    @State var reps: Int = 0
+    @State var weight: Int = 0
+    // Fetch request specifes the entities to fetch from the core data and how to arrange.
+    @FetchRequest(entity: LogItem.entity(), sortDescriptors:[]) var logItems: FetchedResults<LogItem>
+    
+    var body: some View {
+        if let logItem = currentLogItem {
+            ExerciseModifier(name: $name, sets: $sets, reps: $reps, weight: $weight).onAppear{
+                name = logItem.exercise ?? ""
+                sets = Int(logItem.sets)
+                reps = Int(logItem.reps)
+                weight = Int(logItem.weight)
+            }.onDisappear{
+                let keyValues: [String: Any] = ["sets": Int16(sets), "reps": Int16(reps), "weight": Int16(weight), "exercise": name]
+                currentLogItem?.setValuesForKeys(keyValues)
+            }
         }
     }
 }
@@ -48,31 +82,6 @@ struct ExerciseItemView: View{
         }
     }
 }
-
-//struct ExerciseItem {
-//    // Adapter to unify displaying exercises without the overhead of managing the context
-//    var exercise: String
-//    var sets: Int
-//    var reps: Int
-//    var weight: Int
-//    var date: Date
-//
-//    init(logItem: LogItem) {
-//        self.exercise = logItem.exercise ?? ""
-//        self.sets = Int(logItem.sets)
-//        self.reps = Int(logItem.reps)
-//        self.weight = Int(logItem.weight)
-//        self.date = logItem.date ?? Date()
-//    }
-//
-//    init(exercise: Exercise) {
-//        self.exercise = exercise.name
-//        self.sets = exercise.sets
-//        self.reps = exercise.reps
-//        self.weight = exercise.weight ?? 0
-//        self.date = Date()
-//    }
-//}
 
 struct LogView_Previews: PreviewProvider {
     static var previews: some View {

@@ -45,7 +45,7 @@ struct ScheduleView: View {
                 }
             }.navigationBarTitle("Workout")
         }.sheet(isPresented: $editExercise){
-            ExerciseSheetView(fetcher: fetcher, config: config, currentExercise: $currentExercise)
+            ExerciseSheetView(fetcher: fetcher, currentExercise: $currentExercise)
                 .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
         }
     }

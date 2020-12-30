@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ExerciseSheetView: View {
     @ObservedObject var fetcher: WorkoutFetcher
-    @ObservedObject var config: Configuration
     @Binding var currentExercise: Exercise?
     @State var name: String = ""
     @State var sets: Int = 0
@@ -19,16 +18,7 @@ struct ExerciseSheetView: View {
     var body: some View {
         if var exercise = currentExercise {
             VStack{
-                TextEditor(text: $name)
-                    .font(.title2)
-                    .frame(width: 300, height: 100)
-                    .multilineTextAlignment(.center)
-                HStack{
-                    SpinnerSelector(setValue: $sets, withTitle: "Sets", from: 0, to: 100)
-                    SpinnerSelector(setValue: $reps, withTitle: "Reps", from: 0, to: 100)
-                    SpinnerSelector(setValue: $weight, withTitle: "Weight", withUnit: "lbs", from: 0, to: 1000, by: 5)
-                }
-                .offset(y: 50)
+                ExerciseModifier(name: $name, sets: $sets, reps: $reps, weight: $weight)
                 SaveButton(sets: sets, reps: reps, weight: weight, name: name)
             }.onAppear {
                 name = exercise.name
@@ -45,6 +35,28 @@ struct ExerciseSheetView: View {
         }
         else {
             Text("Uh, oh Spaghetti-Os")
+        }
+    }
+}
+
+struct ExerciseModifier: View {
+    @Binding var name: String
+    @Binding var sets: Int
+    @Binding var reps: Int
+    @Binding var weight: Int
+    
+    var body: some View {
+        VStack{
+            TextEditor(text: $name)
+                .font(.title2)
+                .frame(width: 300, height: 100)
+                .multilineTextAlignment(.center)
+            HStack{
+                SpinnerSelector(setValue: $sets, withTitle: "Sets", from: 0, to: 100)
+                SpinnerSelector(setValue: $reps, withTitle: "Reps", from: 0, to: 100)
+                SpinnerSelector(setValue: $weight, withTitle: "Weight", withUnit: "lbs", from: 0, to: 1000, by: 5)
+            }
+            .offset(y: 50)
         }
     }
 }
@@ -105,13 +117,9 @@ struct SaveButton: View {
             saveContext(context)
             showingAlert = true
         }) {
-            Text("Save")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding()
-                .background(Color.red)
-                .cornerRadius(10)
-                .foregroundColor(.white)
+            Image(systemName: "externaldrive")
+                .accentColor(.red)
+                .font(.system(size: 30))
         }.alert(isPresented: $showingAlert) {
             Alert(title: Text("Exercise Saved!"), dismissButton: .default(Text("OK")))
         }
@@ -125,11 +133,10 @@ struct ExerciseSheetView_Previews: PreviewProvider {
         PreviewWrapper()
     }
     struct PreviewWrapper: View {  // Used to set up the state for the view
-        var config = Configuration()
         @State var currentExercise: Exercise? = Exercise(name: "Test Name", setsAndReps: "5X5", id: "Test Primary")
         
         var body: some View {
-            ExerciseSheetView(fetcher: WorkoutFetcher(config: config), config: config, currentExercise: $currentExercise)
+            ExerciseSheetView(fetcher: WorkoutFetcher(config: Configuration()), currentExercise: $currentExercise)
         }
     }
 }
