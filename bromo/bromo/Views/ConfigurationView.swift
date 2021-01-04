@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ConfigurationView: View {
     @ObservedObject var config: Configuration
-
     
     var body: some View {
         NavigationView {
             Form {
+                Section {
+                    DatePicker("Cycle Start Date", selection: $config.cycleStartDate, displayedComponents: .date)
+                }
                 Section {
                     Picker(selection: $config.week, label: Text("Week")) {
                         ForEach(weeks, id:\.self) { week in
@@ -69,30 +71,43 @@ class Configuration: ObservableObject {
     @Published var bodyGroup: String
     @Published var movementDirection: String
     @Published var filteredWords: [String]
-
+    @Published var cycleStartDate: Date {
+        didSet {
+            UserDefaults.standard.set(cycleStartDate, forKey: "cycleStartDate")
+            let workoutConfig = Configuration.getWorkoutConfig(cycleStartDate)
+            week = workoutConfig.week
+            bodyGroup = workoutConfig.bodyGroup
+            movementDirection = workoutConfig.movmentDirection
+        }
+    }
 
     var workout: String {
         get {
             return self.bodyGroup + " " + self.movementDirection
         }
     }
-    // TODO: Make config initialization relative to log
-    private static var referenceDate: Date {
-        let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd"
-        return df.date(from: "2020-12-07")!
-    }
     
     init() {
+        let cycleStartDate: Date = UserDefaults.standard.object(forKey: "cycleStartDate") as? Date ?? Date()
+        let workoutConfig = Configuration.getWorkoutConfig(cycleStartDate)
+        week = workoutConfig.week
+        bodyGroup = workoutConfig.bodyGroup
+        movementDirection = workoutConfig.movmentDirection
+        filteredWords  = [String]()
+        self.cycleStartDate = cycleStartDate
+    }
+    
+    static func getWorkoutConfig(_ cycleStartDate: Date) -> (week: String, bodyGroup: String, movmentDirection: String) {
         let currentDate = Date()
-        let timeInterval = currentDate.timeIntervalSince(Configuration.referenceDate)
+        let timeInterval = currentDate.timeIntervalSince(cycleStartDate)
         let currentWeekIndex = Int(timeInterval.weeks) % weeks.count
         let currentDayIndex = Int(timeInterval.days) % weeklyRoutine.count
-        week = weeks[currentWeekIndex]
-        bodyGroup = bodyGroups[weeklyRoutine[currentDayIndex].bodyGroupIndex]
-        movementDirection = movementDirections[weeklyRoutine[currentDayIndex].movementDirectionIndex]
-        filteredWords  = [String]()
+        let week = weeks[currentWeekIndex]
+        let bodyGroup = bodyGroups[weeklyRoutine[currentDayIndex].bodyGroupIndex]
+        let movementDirection = movementDirections[weeklyRoutine[currentDayIndex].movementDirectionIndex]
+        return (week: week, bodyGroup: bodyGroup, movmentDirection: movementDirection)
     }
+    
     
     func addFilteredWord(word: String) {
         if !filteredWords.contains(word) {
