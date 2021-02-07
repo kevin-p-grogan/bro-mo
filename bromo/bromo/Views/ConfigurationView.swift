@@ -100,12 +100,20 @@ class Configuration: ObservableObject {
     static func getWorkoutConfig(_ cycleStartDate: Date) -> (week: String, bodyGroup: String, movmentDirection: String) {
         let currentDate = Date()
         let timeInterval = currentDate.timeIntervalSince(cycleStartDate)
-        let currentWeekIndex = Int(timeInterval.weeks) % weeks.count
-        let currentDayIndex = Int(timeInterval.days) % weeklyRoutine.count
+        let currentWeekIndex = mod(Int(timeInterval.weeks), weeks.count)
+        let currentDayIndex = mod(Int(timeInterval.days), weeklyRoutine.count)
         let week = weeks[currentWeekIndex]
         let bodyGroup = bodyGroups[weeklyRoutine[currentDayIndex].bodyGroupIndex]
         let movementDirection = movementDirections[weeklyRoutine[currentDayIndex].movementDirectionIndex]
         return (week: week, bodyGroup: bodyGroup, movmentDirection: movementDirection)
+    }
+    
+    static private func mod(_ num: Int, _ base: Int) -> Int {
+        var remainder = num % base
+        if remainder < 0 {
+            remainder += base
+        }
+        return remainder
     }
     
     
