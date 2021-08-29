@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA67925946DAA00A038BF /* LogView.swift */; };
 		AA1AA6A42595357600A038BF /* ExerciseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */; };
-		AA1AA6A52595357600A038BF /* WorkoutFetcher+Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */; };
+		AA1AA6A52595357600A038BF /* WorkoutScheduler+Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A32595357600A038BF /* WorkoutScheduler+Exercise.swift */; };
+		AA47B4F326C0B4E9003364E9 /* LIftPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47B4F226C0B4E9003364E9 /* LIftPickerTests.swift */; };
+		AA47B4FE26C0B749003364E9 /* LiftPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47B4FD26C0B749003364E9 /* LiftPicker.swift */; };
 		AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93D2533856A0035DC87 /* bromoApp.swift */; };
 		AA59C9402533856A0035DC87 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutView.swift */; };
 		AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9412533856B0035DC87 /* Assets.xcassets */; };
@@ -23,10 +25,24 @@
 		AAAA0089253D2866001E4EF4 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA0088253D2866001E4EF4 /* ConfigurationView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AA47B4F526C0B4E9003364E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA59C9322533856A0035DC87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA59C9392533856A0035DC87;
+			remoteInfo = bromo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AA1AA67925946DAA00A038BF /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseSheetView.swift; sourceTree = "<group>"; };
-		AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WorkoutFetcher+Exercise.swift"; sourceTree = "<group>"; };
+		AA1AA6A32595357600A038BF /* WorkoutScheduler+Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WorkoutScheduler+Exercise.swift"; sourceTree = "<group>"; };
+		AA47B4F026C0B4E9003364E9 /* bromoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bromoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA47B4F226C0B4E9003364E9 /* LIftPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIftPickerTests.swift; sourceTree = "<group>"; };
+		AA47B4F426C0B4E9003364E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA47B4FD26C0B749003364E9 /* LiftPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiftPicker.swift; sourceTree = "<group>"; };
 		AA59C93A2533856A0035DC87 /* bromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA59C93D2533856A0035DC87 /* bromoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bromoApp.swift; sourceTree = "<group>"; };
 		AA59C93F2533856A0035DC87 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
@@ -43,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA47B4ED26C0B4E9003364E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA59C9372533856A0035DC87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +76,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA47B4F126C0B4E9003364E9 /* bromoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B4F226C0B4E9003364E9 /* LIftPickerTests.swift */,
+				AA47B4F426C0B4E9003364E9 /* Info.plist */,
+			);
+			path = bromoTests;
+			sourceTree = "<group>";
+		};
+		AA47B4FA26C0B5B9003364E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B4FD26C0B749003364E9 /* LiftPicker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AA59C9312533856A0035DC87 = {
 			isa = PBXGroup;
 			children = (
 				AA59C93C2533856A0035DC87 /* bromo */,
+				AA47B4F126C0B4E9003364E9 /* bromoTests */,
 				AA59C93B2533856A0035DC87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AA59C93A2533856A0035DC87 /* bromo.app */,
+				AA47B4F026C0B4E9003364E9 /* bromoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +114,7 @@
 		AA59C93C2533856A0035DC87 /* bromo */ = {
 			isa = PBXGroup;
 			children = (
+				AA47B4FA26C0B5B9003364E9 /* Model */,
 				AA74FAA225966BF300CF4135 /* Resources */,
 				AA74FA9F25965EC600CF4135 /* Views */,
 				AA8625CA2546116500D2B60E /* Data */,
@@ -115,7 +158,7 @@
 		AA8625CA2546116500D2B60E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				AA1AA6A32595357600A038BF /* WorkoutFetcher+Exercise.swift */,
+				AA1AA6A32595357600A038BF /* WorkoutScheduler+Exercise.swift */,
 				AA8625CB2546118300D2B60E /* BroDataStore.swift */,
 				AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */,
 				AA74FAAA25967D1800CF4135 /* workouts+lifts.swift */,
@@ -126,6 +169,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AA47B4EF26C0B4E9003364E9 /* bromoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA47B4F926C0B4E9003364E9 /* Build configuration list for PBXNativeTarget "bromoTests" */;
+			buildPhases = (
+				AA47B4EC26C0B4E9003364E9 /* Sources */,
+				AA47B4ED26C0B4E9003364E9 /* Frameworks */,
+				AA47B4EE26C0B4E9003364E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA47B4F626C0B4E9003364E9 /* PBXTargetDependency */,
+			);
+			name = bromoTests;
+			productName = bromoTests;
+			productReference = AA47B4F026C0B4E9003364E9 /* bromoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AA59C9392533856A0035DC87 /* bromo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA59C9492533856B0035DC87 /* Build configuration list for PBXNativeTarget "bromo" */;
@@ -149,9 +210,13 @@
 		AA59C9322533856A0035DC87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					AA47B4EF26C0B4E9003364E9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = AA59C9392533856A0035DC87;
+					};
 					AA59C9392533856A0035DC87 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -171,11 +236,19 @@
 			projectRoot = "";
 			targets = (
 				AA59C9392533856A0035DC87 /* bromo */,
+				AA47B4EF26C0B4E9003364E9 /* bromoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA47B4EE26C0B4E9003364E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA59C9382533856A0035DC87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +263,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AA47B4EC26C0B4E9003364E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA47B4F326C0B4E9003364E9 /* LIftPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA59C9362533856A0035DC87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,10 +278,11 @@
 				AA8625CC2546118300D2B60E /* BroDataStore.swift in Sources */,
 				AA8625D2254611D600D2B60E /* BroDataModel.xcdatamodeld in Sources */,
 				AA1AA6A42595357600A038BF /* ExerciseSheetView.swift in Sources */,
+				AA47B4FE26C0B749003364E9 /* LiftPicker.swift in Sources */,
 				AAAA0027253CADE6001E4EF4 /* MainView.swift in Sources */,
 				AAAA0089253D2866001E4EF4 /* ConfigurationView.swift in Sources */,
 				AA59C9402533856A0035DC87 /* WorkoutView.swift in Sources */,
-				AA1AA6A52595357600A038BF /* WorkoutFetcher+Exercise.swift in Sources */,
+				AA1AA6A52595357600A038BF /* WorkoutScheduler+Exercise.swift in Sources */,
 				AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */,
 				AA74FAAB25967D1800CF4135 /* workouts+lifts.swift in Sources */,
 				AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */,
@@ -209,7 +291,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AA47B4F626C0B4E9003364E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA59C9392533856A0035DC87 /* bromo */;
+			targetProxy = AA47B4F526C0B4E9003364E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AA47B4F726C0B4E9003364E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6X7YWSFNB;
+				INFOPLIST_FILE = bromoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.broscience.bromoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bromo.app/bromo";
+			};
+			name = Debug;
+		};
+		AA47B4F826C0B4E9003364E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6X7YWSFNB;
+				INFOPLIST_FILE = bromoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.broscience.bromoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bromo.app/bromo";
+			};
+			name = Release;
+		};
 		AA59C9472533856B0035DC87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,6 +505,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA47B4F926C0B4E9003364E9 /* Build configuration list for PBXNativeTarget "bromoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA47B4F726C0B4E9003364E9 /* Debug */,
+				AA47B4F826C0B4E9003364E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA59C9352533856A0035DC87 /* Build configuration list for PBXProject "bromo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

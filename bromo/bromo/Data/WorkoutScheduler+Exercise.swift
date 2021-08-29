@@ -1,68 +1,52 @@
 //
-//  WorkoutFetcher+Exercise.swift
+//  WorkoutScheduler+Exercise.swift
 //  bromo
 //
 //  Created by Kevin Grogan on 12/24/20.
 //
 
 import Foundation
+import SwiftUI
 import Combine
 
 
-public class WorkoutFetcher: ObservableObject {
+public class WorkoutScheduler: ObservableObject {
     typealias ExerciseList = [Exercise]
-    @Published var workoutSchedule: [Exercise]
-    
-    
-    init(config: Configuration, filteredWords: [String] = []) {
-        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, filteredWords)
+    @Published var workoutSchedule: [Exercise] = []
+    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
+    var filteredWords: [String] {
+        get {
+            return filteredItems.map{$0.filteredWord ?? ""}
+        }
     }
     
-    static private func createWorkoutSchedule(_ workout: String, _ week: String, _ filteredWords: [String] = []) -> ExerciseList {
+    func make(_ config: Configuration) -> WorkoutScheduler{
         // Creates an list of exercises based on the workout type and week.
-        let fullWorkoutName = [workout, week].joined(separator: " ")
-        guard let fullWorkout = workouts[fullWorkoutName] else {return ExerciseList()}
+        let fullWorkoutName = [config.workout, config.week].joined(separator: " ")
+        guard let fullWorkout = workouts[fullWorkoutName] else {return self}
         var exercises = Dictionary<Int, Exercise>()
-        var filteredSubstrings = Set(filteredWords)
+        let liftPicker = LiftPicker(filteredWords)
         for (workoutExerciseName, workoutExercise) in fullWorkout {
-            let lift = pickLift(workoutExercise.category, workoutExercise.directionAndGroup, filteredSubstrings)
+            let lift = liftPicker.pick(workoutExercise.category, workoutExercise.directionAndGroup)
             let exercise = Exercise(name: lift.name, setsAndReps: workoutExercise.setsAndReps, id: workoutExerciseName)
             exercises[workoutExercise.order] = exercise
-            filteredSubstrings.insert(exercise.name)  // ensure that the exercise is not sampled again
+            liftPicker.addFilteredWord(exercise.name)  // ensure that the exercise is not sampled again
         }
         
         let sortedKeys = exercises.keys.sorted()
-        return sortedKeys.map{exercises[$0]!}
+        workoutSchedule = sortedKeys.map{exercises[$0]!}
+        return self
     }
     
-    func populateWorkoutSchedule(_ config: Configuration, filteredWords: [String] = []) {
-        // Populates the workout schedule for the given workout and week.
-        workoutSchedule = WorkoutFetcher.createWorkoutSchedule(config.workout, config.week, filteredWords)
-    }
-    
-    func replaceExercise(_ exerciseID: String, _ config: Configuration, filteredWords: [String] = []) {
-        let filteredSubstrings = Set(workoutSchedule.map{$0.name}).union(Set(filteredWords))
+    func replaceExercise(_ exerciseID: String, _ config: Configuration) {
+        let filteredWordSet = Set(filteredWords)
+        let liftNameSet = Set(workoutSchedule.map{$0.name})
+        let filteredWordAndLiftNames = Array(filteredWordSet.union(liftNameSet))
         let currentExerciseIndex = workoutSchedule.firstIndex{$0.id == exerciseID}!
         let currentExercise = workoutSchedule[currentExerciseIndex]
         let currentLift = lifts.first{$0.name == currentExercise.name}!
-        let lift = WorkoutFetcher.pickLift(currentLift.category, currentLift.directionAndGroup, filteredSubstrings)
+        let lift = LiftPicker(filteredWordAndLiftNames).pick(currentLift.category, currentLift.directionAndGroup)
         workoutSchedule[currentExerciseIndex].name = lift.name
-    }
-    
-    private static func pickLift(_ category: String, _ directionAndGroup: String,  _ filteredSubstrings: Set<String>) -> Lift {
-        // Picks a lift from the constant lifts array via weighted random sample
-        let filteredLifts = lifts.filter{
-            let lift = $0
-            return (category == lift.category)
-                &&  (directionAndGroup == lift.directionAndGroup)
-                // Check that the name of the lift does not contain any of the filter substrings
-                &&  (!filteredSubstrings.contains{lift.name.lowercased().contains($0.lowercased())})
-        }
-        var samplingArray = [Lift]()
-        filteredLifts.forEach{samplingArray.append(contentsOf: Array(repeating: $0, count: $0.rating))}
-        // The behavior here is to ignore the filtered substrings if no lifts are found.
-        return samplingArray.randomElement()
-            ?? lifts.filter{(category == $0.category) && (directionAndGroup == $0.directionAndGroup)}.randomElement()!
     }
     
     func getScheduledExerciseNameBy(id: String?) -> String {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExerciseSheetView: View {
-    @ObservedObject var fetcher: WorkoutFetcher
+    @ObservedObject var scheduler: WorkoutScheduler
     @Binding var currentExercise: Exercise?
     @State var name: String = ""
     @State var sets: Int = 0
@@ -30,7 +30,7 @@ struct ExerciseSheetView: View {
                 exercise.sets = sets
                 exercise.reps = reps
                 exercise.weight = weight
-                fetcher.updateSchedule(with: exercise)
+                scheduler.updateSchedule(with: exercise)
             }.preferredColorScheme(.dark)
         }
         else {
@@ -136,7 +136,7 @@ struct ExerciseSheetView_Previews: PreviewProvider {
         @State var currentExercise: Exercise? = Exercise(name: "Test Name", setsAndReps: "5X5", id: "Test Primary")
         
         var body: some View {
-            ExerciseSheetView(fetcher: WorkoutFetcher(config: Configuration()), currentExercise: $currentExercise)
+            ExerciseSheetView(scheduler: WorkoutScheduler().make(Configuration()), currentExercise: $currentExercise)
         }
     }
 }
