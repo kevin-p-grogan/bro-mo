@@ -32,10 +32,11 @@ class LiftPickerTests: XCTestCase {
             Lift("Test2 within kappa?"),
             Lift("About Test2 or delta!"),
         ]
-        let liftPicker = LiftPicker()
+        let testLiftSet = Set(testLifts)
+        let liftPicker = LiftPicker(lifts: testLifts)
         let numSamples = 10000
         let numTest1Samples = (0 ..< numSamples).map{_ in
-            let sampledLift = liftPicker.sample(testLifts)
+            let sampledLift = liftPicker.sample(testLiftSet)!
             return sampledLift == testLifts[0] ? 1: 0
         }.reduce(0, +)
         let foundTest1SampleProbaility = Double(numTest1Samples) / Double(numSamples)
