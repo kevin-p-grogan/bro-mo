@@ -10,7 +10,8 @@
 		AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA67925946DAA00A038BF /* LogView.swift */; };
 		AA1AA6A42595357600A038BF /* ExerciseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */; };
 		AA1AA6A52595357600A038BF /* WorkoutScheduler+Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA6A32595357600A038BF /* WorkoutScheduler+Exercise.swift */; };
-		AA47B4F326C0B4E9003364E9 /* LIftPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47B4F226C0B4E9003364E9 /* LIftPickerTests.swift */; };
+		AA25201926EE84F0008674B9 /* stopwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25201826EE84F0008674B9 /* stopwords.swift */; };
+		AA47B4F326C0B4E9003364E9 /* LiftPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47B4F226C0B4E9003364E9 /* LiftPickerTests.swift */; };
 		AA47B4FE26C0B749003364E9 /* LiftPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47B4FD26C0B749003364E9 /* LiftPicker.swift */; };
 		AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93D2533856A0035DC87 /* bromoApp.swift */; };
 		AA59C9402533856A0035DC87 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutView.swift */; };
@@ -39,8 +40,9 @@
 		AA1AA67925946DAA00A038BF /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		AA1AA6A22595357600A038BF /* ExerciseSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseSheetView.swift; sourceTree = "<group>"; };
 		AA1AA6A32595357600A038BF /* WorkoutScheduler+Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WorkoutScheduler+Exercise.swift"; sourceTree = "<group>"; };
+		AA25201826EE84F0008674B9 /* stopwords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stopwords.swift; sourceTree = "<group>"; };
 		AA47B4F026C0B4E9003364E9 /* bromoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bromoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA47B4F226C0B4E9003364E9 /* LIftPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIftPickerTests.swift; sourceTree = "<group>"; };
+		AA47B4F226C0B4E9003364E9 /* LiftPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftPickerTests.swift; sourceTree = "<group>"; };
 		AA47B4F426C0B4E9003364E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA47B4FD26C0B749003364E9 /* LiftPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiftPicker.swift; sourceTree = "<group>"; };
 		AA59C93A2533856A0035DC87 /* bromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +81,7 @@
 		AA47B4F126C0B4E9003364E9 /* bromoTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA47B4F226C0B4E9003364E9 /* LIftPickerTests.swift */,
+				AA47B4F226C0B4E9003364E9 /* LiftPickerTests.swift */,
 				AA47B4F426C0B4E9003364E9 /* Info.plist */,
 			);
 			path = bromoTests;
@@ -162,6 +164,7 @@
 				AA8625CB2546118300D2B60E /* BroDataStore.swift */,
 				AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */,
 				AA74FAAA25967D1800CF4135 /* workouts+lifts.swift */,
+				AA25201826EE84F0008674B9 /* stopwords.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -267,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA47B4F326C0B4E9003364E9 /* LIftPickerTests.swift in Sources */,
+				AA47B4F326C0B4E9003364E9 /* LiftPickerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +289,7 @@
 				AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */,
 				AA74FAAB25967D1800CF4135 /* workouts+lifts.swift in Sources */,
 				AA1AA67A25946DAA00A038BF /* LogView.swift in Sources */,
+				AA25201926EE84F0008674B9 /* stopwords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

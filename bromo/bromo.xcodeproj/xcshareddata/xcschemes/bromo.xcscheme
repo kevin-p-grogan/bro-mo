@@ -37,6 +37,11 @@
                BlueprintName = "bromoTests"
                ReferencedContainer = "container:bromo.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "LiftPickerTests/testPickerGetsCorrectLift()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
