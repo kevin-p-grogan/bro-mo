@@ -24,6 +24,12 @@ struct ScheduleView: View {
     @ObservedObject var config: Configuration
     @State var editExercise = false
     @State var currentExercise: Exercise? = nil
+    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
+    var filteredWords: Set<String> {
+        get {
+            return Set(filteredItems.map{$0.filteredWord ?? ""})
+        }
+    }
 
     var body: some View {
         NavigationView{
@@ -36,7 +42,7 @@ struct ScheduleView: View {
                 }.onDelete { indexSet in
                     for index in indexSet {
                         if let exerciseId = scheduler.workoutSchedule[index].id {
-                            scheduler.replaceExercise(exerciseId, config)
+                            scheduler.replaceExercise(exerciseId, config, filteredWords)
                         }
                     }
                 }

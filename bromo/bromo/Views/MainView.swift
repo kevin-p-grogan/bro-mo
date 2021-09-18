@@ -9,10 +9,17 @@ import SwiftUI
 
 struct MainView: View {
     @ObservedObject var config = Configuration()
+    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
+    var filteredWords: Set<String> {
+        get {
+            return Set(filteredItems.map{$0.filteredWord ?? ""})
+        }
+    }
+    
     
     var body: some View {
         TabView {
-            WorkoutView(config: config, scheduler: WorkoutScheduler().make(config))
+            WorkoutView(config: config, scheduler: WorkoutScheduler(config, filteredWords))
                 .tabItem {
                     Image(systemName: "bolt.heart")
                 }

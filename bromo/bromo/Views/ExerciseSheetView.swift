@@ -136,7 +136,7 @@ struct ExerciseSheetView_Previews: PreviewProvider {
         @State var currentExercise: Exercise? = Exercise(name: "Test Name", setsAndReps: "5X5", id: "Test Primary")
         
         var body: some View {
-            ExerciseSheetView(scheduler: WorkoutScheduler().make(Configuration()), currentExercise: $currentExercise)
+            ExerciseSheetView(scheduler: WorkoutScheduler(Configuration()), currentExercise: $currentExercise)
         }
     }
 }

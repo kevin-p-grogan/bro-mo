@@ -38,6 +38,15 @@ struct Lift: Hashable, Codable {
         }
     }
     
+    init(_ name: String, rating: Int = 1) {
+        // Simple initiation primarily intended for testing
+        self.name = name
+        self.rating = rating
+        equipment = []
+        category = ""
+        directionAndGroup = ""
+    }
+    
     enum CodingKeys: String, CodingKey {
         // create a name map for the keys from the JSON file
         case name

@@ -13,17 +13,14 @@ import Combine
 public class WorkoutScheduler: ObservableObject {
     typealias ExerciseList = [Exercise]
     @Published var workoutSchedule: [Exercise] = []
-    @FetchRequest(entity: FilteredItem.entity(), sortDescriptors:[]) var filteredItems: FetchedResults<FilteredItem>
-    var filteredWords: [String] {
-        get {
-            return filteredItems.map{$0.filteredWord ?? ""}
-        }
-    }
     
-    func make(_ config: Configuration) -> WorkoutScheduler{
+    init(_ config: Configuration, _ filteredWords: Set<String> = Set()) {
         // Creates an list of exercises based on the workout type and week.
         let fullWorkoutName = [config.workout, config.week].joined(separator: " ")
-        guard let fullWorkout = workouts[fullWorkoutName] else {return self}
+        guard let fullWorkout = workouts[fullWorkoutName] else {
+            print("WARNING: \(fullWorkoutName) is not a valid workout. Not creating a schedule.")
+            return
+        }
         var exercises = Dictionary<Int, Exercise>()
         let liftPicker = LiftPicker(filteredWords)
         for (workoutExerciseName, workoutExercise) in fullWorkout {
@@ -35,13 +32,12 @@ public class WorkoutScheduler: ObservableObject {
         
         let sortedKeys = exercises.keys.sorted()
         workoutSchedule = sortedKeys.map{exercises[$0]!}
-        return self
     }
     
-    func replaceExercise(_ exerciseID: String, _ config: Configuration) {
+    func replaceExercise(_ exerciseID: String, _ config: Configuration, _ filteredWords: Set<String> = Set()) {
         let filteredWordSet = Set(filteredWords)
         let liftNameSet = Set(workoutSchedule.map{$0.name})
-        let filteredWordAndLiftNames = Array(filteredWordSet.union(liftNameSet))
+        let filteredWordAndLiftNames = filteredWordSet.union(liftNameSet)
         let currentExerciseIndex = workoutSchedule.firstIndex{$0.id == exerciseID}!
         let currentExercise = workoutSchedule[currentExerciseIndex]
         let currentLift = lifts.first{$0.name == currentExercise.name}!

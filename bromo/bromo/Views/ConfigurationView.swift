@@ -54,6 +54,7 @@ struct FilterView: View {
             let newItem = FilteredItem(context: context)
             newItem.filteredWord = filteredWord
             saveContext(context)
+            self.filteredWord = ""
         }
         List{
             ForEach(filteredItems) { fi in
