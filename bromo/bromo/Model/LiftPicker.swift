@@ -30,24 +30,26 @@ public class LiftPicker {
     }
     
     static private func computeLogProbabilities(from lifts: [Lift]) -> [Double] {
-        let tolkenizedLiftNames: [[String]] = lifts.map{extractLiftTokens(using: $0)}
+        let tolkenizedLiftNames: [Set<String>] = lifts.map{extractLiftTokens(using: $0)}
         let tokens = tolkenizedLiftNames.flatMap{$0}
         let counts = countOccurences(of: tokens)
         // Split these operations for efficiency since the number of tokens total is expected to be far greater than that found in the lift.
-        let emptyLiftLogProbability = computeEmptyTokenLogProbability(with: counts)
-        let logProbabilityCorrections: [Double] = tolkenizedLiftNames.map{computeLogProbabilityCorrection(using: $0, referencing: counts)}
+        let numLifts = lifts.count
+        let emptyLiftLogProbability = computeEmptyTokenLogProbability(with: counts, using: numLifts)
+        let logProbabilityCorrections: [Double] = tolkenizedLiftNames.map{computeLogProbabilityCorrection(using: $0, referencing: counts, and: numLifts)}
         let logProbabilities = logProbabilityCorrections.map{emptyLiftLogProbability + $0}
         return logProbabilities
     }
     
-    static private func extractLiftTokens(using lift: Lift) -> [String] {
+    static private func extractLiftTokens(using lift: Lift) -> Set<String> {
         let liftName = lift.name
         let tolkenizer = NLTokenizer(unit: .word)
         tolkenizer.string = liftName
         let tokens = tolkenizer.tokens(for: liftName.startIndex ..< liftName.endIndex).map{String(liftName[$0])}
         let regularizedTokens = tokens.map(LiftPicker.regularize)
         let tokensWithoutStopWords = regularizedTokens.filter{!stopWords.contains($0)}
-        return tokensWithoutStopWords
+        let tokenSet = Set(tokensWithoutStopWords)
+        return tokenSet
     }
     
     static private func countOccurences(of strings: [String]) -> [String: Int] {
@@ -63,24 +65,22 @@ public class LiftPicker {
         return counts
     }
     
-    static private func computeEmptyTokenLogProbability(with counts: [String: Int]) -> Double {
+    static private func computeEmptyTokenLogProbability(with counts: [String: Int], using num: Int) -> Double {
         // Computes the log probability of the tokens being empty.
-        let numTokens = counts.values.reduce(0, +)
         let emptyTokenLogProbability = counts.map{
-            let probabilityTokenNotOccuring = 1.0 - Double($0.value)/Double(numTokens+1)  // add smoothing
+            let probabilityTokenNotOccuring = 1.0 - Double($0.value)/Double(num+1)  // add smoothing
             return log(probabilityTokenNotOccuring)
         }.reduce(0.0, +)
         return emptyTokenLogProbability
     }
     
-    static private func computeLogProbabilityCorrection(using tokens: [String], referencing counts: [String: Int]) -> Double {
+    static private func computeLogProbabilityCorrection(using tokens: Set<String>, referencing counts: [String: Int], and num: Int) -> Double {
         // Computes the correction to the probabilty of "tokens" being an empty set.
-        let numTokens = counts.values.reduce(0, +)
         let tokenLogProbabilityCorrections: [Double] = tokens.map{
             let token = $0
-            let count = counts[token] ?? numTokens
-            let tokenLogProbability = log(Double(count) / Double(numTokens+1))
-            let noTokenLogProbility = log(1.0 - Double(count) / Double(numTokens+1))
+            let count = counts[token] ?? num
+            let tokenLogProbability = log(Double(count) / Double(num+1))
+            let noTokenLogProbility = log(1.0 - Double(count) / Double(num+1))
             return tokenLogProbability - noTokenLogProbility
         }
         let logProbabiltyCorrection = tokenLogProbabilityCorrections.reduce(0.0, +)
