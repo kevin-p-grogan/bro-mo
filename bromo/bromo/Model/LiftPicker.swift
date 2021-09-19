@@ -22,14 +22,16 @@ public class LiftPicker {
     }
         
     static private func computeSampleWeights(from lifts: [Lift]) -> [Lift: Double] {
-        // computation of the sample weights is only performed once here
+        // Computation of the sample weights is only performed once here.
         let logProbabilities = LiftPicker.computeLogProbabilities(from: lifts)
         let ratings = lifts.map{Double($0.rating)}
-        let sampleWeightValues = zip(ratings, logProbabilities).map{$0.0 - $0.1}
+        // Ratings are a multiplicative weight similar to the term frequency in tf-idf.
+        let sampleWeightValues = zip(ratings, logProbabilities).map{-$0.0*$0.1}
         return Dictionary(uniqueKeysWithValues: zip(lifts, sampleWeightValues))
     }
     
     static private func computeLogProbabilities(from lifts: [Lift]) -> [Double] {
+        // Computes the weights due to the occurences of tokens. This is equivalent to computing inverse document frequencies and summing over the tokens in a naive fashion.
         let tolkenizedLiftNames: [Set<String>] = lifts.map{extractLiftTokens(using: $0)}
         let tokens = tolkenizedLiftNames.flatMap{$0}
         let counts = countOccurences(of: tokens)
