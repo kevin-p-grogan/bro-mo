@@ -13,11 +13,12 @@
 		AA25201926EE84F0008674B9 /* stopwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25201826EE84F0008674B9 /* stopwords.swift */; };
 		AA47B4F326C0B4E9003364E9 /* LiftPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47B4F226C0B4E9003364E9 /* LiftPickerTests.swift */; };
 		AA47B4FE26C0B749003364E9 /* LiftPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47B4FD26C0B749003364E9 /* LiftPicker.swift */; };
+		AA4B8B9F2A2D0C2E00A9B050 /* lifts.json in Resources */ = {isa = PBXBuildFile; fileRef = AA4B8B9E2A2D0C2E00A9B050 /* lifts.json */; };
+		AA4B8BA02A2D0C2E00A9B050 /* lifts.json in Resources */ = {isa = PBXBuildFile; fileRef = AA4B8B9E2A2D0C2E00A9B050 /* lifts.json */; };
 		AA59C93E2533856A0035DC87 /* bromoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93D2533856A0035DC87 /* bromoApp.swift */; };
 		AA59C9402533856A0035DC87 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59C93F2533856A0035DC87 /* WorkoutView.swift */; };
 		AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9412533856B0035DC87 /* Assets.xcassets */; };
 		AA59C9452533856B0035DC87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59C9442533856B0035DC87 /* Preview Assets.xcassets */; };
-		AA74FAA8259670EF00CF4135 /* lifts.json in Resources */ = {isa = PBXBuildFile; fileRef = AA74FAA7259670EF00CF4135 /* lifts.json */; };
 		AA74FAAB25967D1800CF4135 /* workouts+lifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74FAAA25967D1800CF4135 /* workouts+lifts.swift */; };
 		AA8625CC2546118300D2B60E /* BroDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8625CB2546118300D2B60E /* BroDataStore.swift */; };
 		AA8625D2254611D600D2B60E /* BroDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA8625D0254611D600D2B60E /* BroDataModel.xcdatamodeld */; };
@@ -45,13 +46,13 @@
 		AA47B4F226C0B4E9003364E9 /* LiftPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftPickerTests.swift; sourceTree = "<group>"; };
 		AA47B4F426C0B4E9003364E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA47B4FD26C0B749003364E9 /* LiftPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiftPicker.swift; sourceTree = "<group>"; };
+		AA4B8B9E2A2D0C2E00A9B050 /* lifts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lifts.json; sourceTree = "<group>"; };
 		AA59C93A2533856A0035DC87 /* bromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bromo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA59C93D2533856A0035DC87 /* bromoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bromoApp.swift; sourceTree = "<group>"; };
 		AA59C93F2533856A0035DC87 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		AA59C9412533856B0035DC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA59C9442533856B0035DC87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA59C9462533856B0035DC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA74FAA7259670EF00CF4135 /* lifts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lifts.json; sourceTree = "<group>"; };
 		AA74FAAA25967D1800CF4135 /* workouts+lifts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "workouts+lifts.swift"; sourceTree = "<group>"; };
 		AA8625CB2546118300D2B60E /* BroDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroDataStore.swift; sourceTree = "<group>"; };
 		AA8625D1254611D600D2B60E /* BroDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BroDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -151,8 +152,8 @@
 		AA74FAA225966BF300CF4135 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA4B8B9E2A2D0C2E00A9B050 /* lifts.json */,
 				AAA417712596CAA1006B8CD5 /* workouts.json */,
-				AA74FAA7259670EF00CF4135 /* lifts.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -249,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4B8BA02A2D0C2E00A9B050 /* lifts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4B8B9F2A2D0C2E00A9B050 /* lifts.json in Resources */,
 				AA59C9452533856B0035DC87 /* Preview Assets.xcassets in Resources */,
 				AA59C9422533856B0035DC87 /* Assets.xcassets in Resources */,
-				AA74FAA8259670EF00CF4135 /* lifts.json in Resources */,
 				AAA417722596CAA1006B8CD5 /* workouts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
